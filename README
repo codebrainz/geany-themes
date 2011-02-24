@@ -37,7 +37,7 @@ Note: replace ~/src with wherever you would like to keep the files.
 Keeping up to Date:
 
 	cd ~/src/geany-themes
-	git reset --hard HEAD # will revert any changes you made locally
+	git reset --hard HEAD # will revert any changes you made locally!
 	git pull
 
 
