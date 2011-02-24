@@ -1,0 +1,17 @@
+Geany Color Themes
+------------------
+
+You need to replace all the old filetypes.* files, so make a backup before hand
+if you want.
+
+Put the contents of the filedefs dir (filetypes.* files) into either the
+user geany data filedefs dir (ex. ~/.config/geany/filedefs) or in the system
+wide geany data dir (ex. /usr/share/geany).
+
+Put the contents of the colorschemes dir (*.conf) into either the user geany
+data colorschemes dir (ex. ~/.config/geany/colorschemes) or in the system
+wide geany data colorschemes dir (ex. /usr/share/geany/colorschemes).
+
+
+Please send patches for the filetypes.* files and new colorschemes and I'll
+add theme here.
