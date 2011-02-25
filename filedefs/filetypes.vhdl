@@ -17,6 +17,7 @@ stdpackage=preprocessor
 stdtype=type
 userword=keyword_2
 
+
 [keywords]
 # all items must be in one line
 keywords=access after alias all architecture array assert attribute begin block body buffer bus case component configuration constant disconnect downto else elsif end entity exit file for function generate generic group guarded if impure in inertial inout is label library linkage literal loop map new next null of on open others out package port postponed procedure process pure range record register reject report return select severity shared signal subtype then to transport type unaffected units until use variable wait when while with

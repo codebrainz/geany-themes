@@ -20,6 +20,7 @@ commentlinedoc=comment_doc
 commentdockeyword=comment_doc_keyword
 commentdockeyworderror=comment_doc_keyword_error
 
+
 [keywords]
 # all items must be in one line
 primary=__FILE__ __LINE__ __DATA__ __TIME__ __TIMESTAMP__ abstract alias align asm assert auto body bool break byte case cast catch cdouble cent cfloat char class const continue creal dchar debug default delegate delete deprecated do double else enum export extern false final finally float for foreach function goto idouble if ifloat immutable import in inout int interface invariant ireal is long macro mixin module new nothrow null out override package pragma private protected public pure real ref return scope shared short static struct super switch synchronized template this throw true try typedef typeof ubyte ucent uint ulong union unittest ushort version void volatile wchar while with

@@ -10,6 +10,7 @@ deleted=line_added
 added=line_removed
 changed=line_changed
 
+
 [settings]
 # default extension used when saving files
 extension=diff

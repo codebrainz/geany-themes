@@ -14,6 +14,7 @@ identifier=identifier
 infix=function
 infixeol=function,italic
 
+
 [keywords]
 # all items must be in one line
 primary=break else F FALSE for function if in Inf NA NaN next NULL repeat require return source T TRUE while

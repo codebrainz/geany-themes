@@ -19,6 +19,7 @@ link=type
 code=attribute
 codebk=attribute
 
+
 [settings]
 # default extension used when saving files
 extension=mdml

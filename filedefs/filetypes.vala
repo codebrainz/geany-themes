@@ -22,6 +22,7 @@ commentdockeyword=comment_doc_keyword
 commentdockeyworderror=comment_doc_keyword_error
 globalclass=class
 
+
 [keywords]
 # all items must be in one line
 primary=else if switch case default break continue return for foreach in do while is try catch finally throw namespace interface class struct enum signal errordomain construct callback get set base const static var weak virtual abstract override inline extern public protected private delegate out ref lock using true false null generic new delete base this value typeof sizeof throws requires ensures void bool char uchar int uint short ushort long ulong size_t ssize_t int8 uint8 int16 uint16 int32 uint32 int64 uint64 float double unichar string constpointer time_t

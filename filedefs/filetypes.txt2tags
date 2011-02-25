@@ -24,6 +24,7 @@ option=operator
 preproc=preprocessor
 postproc=preprocessor
 
+
 [settings]
 # default extension used when saving files
 extension=txt2tags

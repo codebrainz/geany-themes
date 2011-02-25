@@ -22,6 +22,7 @@ commentdockeyword=comment_doc_keyword
 commentdockeyworderror=comment_doc_keyword_error
 globalclass=class
 
+
 [keywords]
 # all items must be in one line
 primary=break case catch const continue default delete do each else false finally for function get if in Infinity instanceof let NaN new null return set switch this throw true try typeof undefined var void while with yield

@@ -22,6 +22,7 @@ commentdockeyword=comment_doc_keyword
 commentdockeyworderror=comment_doc_keyword_error
 globalclass=class
 
+
 [keywords]
 # all items must be in one line
 primary=if else switch case default for while do discard return break continue true false struct void bool int uint float vec2 vec3 vec4 ivec2 ivec3 ivec4 bvec2 bvec3 bvec4 uvec2 uvec3 uvec4 mat2 mat3 mat4 mat2x2 mat2x3 mat2x4 mat3x2 mat3x3 mat3x4 mat4x2 mat4x3 mat4x4 sampler1D sampler2D sampler3D samplerCube sampler1DShadow sampler2DShadow sampler1DArray sampler2DArray sampler1DArrayShadow sampler2DArrayShadow isampler1D isampler2D isampler3D isamplerCube isampler1DArray isampler2DArray usampler1D usampler2D usampler3D usamplerCube usampler1DArray usampler2DArray const invariant centroid in out inout attribute uniform varying smooth flat noperspective highp mediump lowp

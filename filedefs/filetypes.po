@@ -11,6 +11,7 @@ msgctxt=keyword_3
 msgctxt_text=keyword_3,bold
 fuzzy=string_1,bold
 
+
 [settings]
 # default extension used when saving files
 extension=po

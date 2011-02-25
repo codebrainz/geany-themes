@@ -14,6 +14,7 @@ number=number_1
 string=string_1
 locale=other
 
+
 [keywords]
 # all items must be in one line
 primary=ABORT EXIT DO LOOP UNLOOP BEGIN UNTIL WHILE REPEAT EXIT IF ELSE THEN CASE ENDCASE OF ENDOF

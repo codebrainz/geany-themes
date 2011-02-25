@@ -22,6 +22,7 @@ commentdockeyword=comment_doc_keyword
 commentdockeyworderror=comment_doc_keyword_error
 globalclass=class
 
+
 [keywords]
 # all items must be in one line
 primary=abstract break case catch class const continue trace do else enum extends finally for function goto if implements import in instanceof int interface new package private public return static super switch this throw throws transient try typeof var void volatile while with

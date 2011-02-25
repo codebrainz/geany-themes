@@ -11,6 +11,7 @@ operator=operator
 identifier=identifier_1
 doublequotedstring=string_2
 
+
 [keywords]
 # all items must be in one line
 primary=break case catch continue else elseif end for function global if otherwise persistent return switch try while

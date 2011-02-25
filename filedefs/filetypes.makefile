@@ -9,6 +9,7 @@ operator=operator
 target=keyword_1
 ideol=type
 
+
 [settings]
 # default extension used when saving files
 extension=mak
