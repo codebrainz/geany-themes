@@ -1,0 +1,4 @@
+Do not edit these filetype.* files directly, instead edit the *.conf files
+under the 'mappings' directory.  These files are auto-generated.
+
+Please don't submit patches against any of these files.

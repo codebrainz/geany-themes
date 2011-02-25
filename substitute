@@ -1,0 +1,77 @@
+#!/usr/bin/env python
+
+"""
+Substitutes each lexer's states into each filetype.* file.
+"""
+
+import os
+from glob import glob
+from optparse import OptionParser
+
+def do_substitutions(map_dir, tmpl_dir, fdefs_dir):
+	
+	subst_count = 0
+	copy_count = 0
+	
+	map_glob = os.path.join(map_dir, "*.conf")
+	tmpl_glob = os.path.join(tmpl_dir, "filetypes.*.in")
+	
+	subst_files = []
+
+	for mapping_file in glob(map_glob):
+		
+		lexer = os.path.splitext(os.path.basename(mapping_file))[0]
+		subst = "@%s_substitution@" % lexer
+		
+		for file_type_in in glob(tmpl_glob):
+			
+			file_contents = open(file_type_in, "r").read()
+			
+			if subst in file_contents:
+				# remove '.in' at the end of filename
+				file_type = os.path.basename(file_type_in)[:-3]
+				file_contents = file_contents.replace(subst, 
+									open(mapping_file,"r").read())
+				ft_path = os.path.join(fdefs_dir, file_type)
+				open(ft_path,"w").write(file_contents)
+				print "Wrote output file %s" % file_type
+				subst_count += 1
+				subst_files.append(file_type_in)
+	
+	# copy over filetypes.* that do not require substitution
+	for file_type_in in glob(tmpl_glob):
+		if file_type_in not in subst_files:
+			file_type = os.path.basename(file_type_in)[:-3]
+			new_file = os.path.join(fdefs_dir, file_type)
+			open(new_file,"w").write(open(file_type_in,"r").read())
+			print "Copied file %s" % file_type
+			copy_count += 1
+				
+	print "Made %d substitutions total and copied %d files directly" % (
+				subst_count, copy_count)
+
+if __name__ == "__main__": 
+	
+	p = OptionParser()
+	
+	p.add_option("-m", metavar="DIR", dest="map_dir", default="mappings", 
+		help="directory that holds the mapping *.conf files")
+	
+	p.add_option("-t", metavar="DIR", dest="template_dir", default="templates",
+		help="directory that holds the template filetypes.*.in files")
+	
+	p.add_option("-f", metavar="DIR", dest="filedefs_dir", default="filedefs",
+		help="directory to output substituted filetypes.* files into")
+	
+	opts, args = p.parse_args()
+	
+	if not os.path.isdir(opts.map_dir):
+		p.error("Mappings directory '%s' does not exist" % opts.map_dir)
+	
+	if not os.path.isdir(opts.template_dir):
+		p.error("Templates directory '%s' does not exist" % opts.template_dir)
+	
+	if not os.path.isdir(opts.filedefs_dir):
+		os.makedirs(opts.filedefs_dir)
+	
+	do_substitutions(opts.map_dir, opts.template_dir, opts.filedefs_dir)

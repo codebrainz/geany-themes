@@ -1,0 +1,15 @@
+Do not edit the '[styling]' section of these filetype.* files directly, 
+instead edit the *.conf files under the 'mappings' directory.  Only edit
+other sections of these files as desired.
+
+Please don't send any patches with changes to the '[styling]' section of
+these files.  Other patches can be considered, but these files, with the 
+exception of the '[styling]' section are Geany's default.
+
+All patches against filetypes.common will, however, be considered.  If you
+change something in filetypes.common, make sure to update any of the themes
+with your changes, where required.
+
+If you've found an problem and don't want to create a patch yourself, please
+post an 'Issue' at https://github.com/codebrainz/geany-themes/issues and I 
+will take care of it.

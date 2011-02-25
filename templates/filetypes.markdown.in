@@ -1,0 +1,13 @@
+# For complete documentation of this file, please see Geany's main documentation
+[styling]
+# foreground;background;bold;italic
+@markdown_substitution@
+
+[settings]
+# default extension used when saving files
+extension=mdml
+
+# sort tags by appearance
+symbol_list_sort_mode=1
+
+
