@@ -55,7 +55,7 @@ indent_guide=indent_guide
 
 # third argument: if true, use this foreground color. If false, use the default value defined by the filetypes.
 # fourth argument: if true, use this background color. If false, use the default value defined by the filetypes.
-white_space=0x000000;0xffffff;false;false
+white_space=white_space
 
 # style of folding icons, valid values are:
 # first argument:  1 for boxes, 2 for circles, 3 for arrows, 4 for +/-

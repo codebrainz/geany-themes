@@ -83,7 +83,7 @@ _NOTE: You'll need to fix any conflicts if you've made local changes._
 ### Making Changes: ###
 
 Edit any of the `colorschemes/*.conf` files or `mappings/*.conf` files or 
-create a new colorscheme `.conf` file in the `colorschemes` directory  Using an
+create a new colorscheme `.conf` file in the `colorschemes` directory.  Using an
 existing theme (ex. `gedit.conf`) and modifying will be easier than from
 scratch.  When I get a chance I'll add a `README` in the `colorschemes`
 directory explaining in detail what all the named styles should be used for, 
@@ -96,7 +96,7 @@ without restarting Geany is the 'selection' named style, I haven't noticed any
 others yet._
 
 Once you've made your changes, you can update your Geany by using the simple
-Python scripts included with `geany-theme`.  The `substitute` script will go
+Python scripts included with geany-themes.  The `substitute` script will go
 through each `templates/filetypes.*.in` file and replace the substitution
 marker `@LEXERNAME_substitution@` with the contents of the 
 `mappings/LEXERNAME.conf` file and writes it into the `filedefs/filetypes.*` 
@@ -108,7 +108,7 @@ restarting Geany.
 When creating a new theme, a command line session might look like this:
 
 	$ cd ~/src/geany-themes
-	$ cp -v colorschemes/gedit.conf colorschemes/yournewtheme.conf
+	$ cp -v colorschemes/{gedit.conf,yournewtheme.conf}
 	$ geany colorschemes/yournewtheme.conf &
 	... edit the theme .conf file and save ...
 	$ ./install
@@ -129,8 +129,9 @@ line session might look like this:
 	$ geany -v
 	... debug output, possibly containing any problems with the mappings ...
 
-Then follow the 'Submitting your changes' section.  Don't forget to delete the
-`.backup` file if you made one, before making a patch.
+When you are done making changes, follow the 'Submitting your changes' section.
+Don't forget to delete the `*.backup` file if you made one, before making a 
+patch.
 
 
 ### Submitting your changes: ###
