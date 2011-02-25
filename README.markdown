@@ -23,7 +23,7 @@ No programming skills are required at all to help out.
 
 ## Installation:
 
-*NOTE: this will overwrite any of your customized filedefs/colorschemes in your home directory, you may want to back them up first, for example:
+*NOTE: this will overwrite any of your customized filedefs/colorschemes in your home directory, you may want to back them up first, for example:*
 
 <pre>
 $ cd ~/.config/geany
@@ -66,7 +66,7 @@ to hack/contribute.
 
 ### Installing:
 
-*NOTE: replace `~/src` with wherever you would like to keep the files.  These are example commands only, don't just copy and paste them into a terminal.
+*NOTE: replace `~/src` with wherever you would like to keep the files.  These are example commands only, don't just copy and paste them into a terminal.*
 
 <pre>
 killall geany
@@ -90,7 +90,7 @@ git pull
 git stash pop
 </pre>
 
-*NOTE: You'll need to fix any conflicts if you've made local changes.
+*NOTE: You'll need to fix any conflicts if you've made local changes.*
 
 ### Submitting your changes:
 
