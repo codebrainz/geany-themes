@@ -31,21 +31,21 @@ filedefs dir, for example `~/.config/geany/filedefs`.
 	$ cp -v filedefs/filetypes.* ~/.config/geany/filedefs
 
 Copy all the `*.conf` files from the colorschemes dir into your Geany 
-colorschemes dir, for example `~/.config/geany/colorschems`.
+colorschemes dir, for example `~/.config/geany/colorschemes`.
 
 	$ cp -v colorschemes/*.conf ~/.config/geany/colorschemes
 
 
-## Simpler Installation: ##
+## Easier Installation: ##
 
 There is a simple installation script that can copy the files for you, see
-`./install --help` for usage.  It was not tested on Windows.
+`./install --help` for usage.  It was not tested on Windows or much at all.
 
 
 ## Uninstallation: ##
 
-Remove all the files copied in 'Installation' and put the backed up files
-back (if any).
+Remove all the files copied in the 'Installation' section and put the backed up
+files back (if any).
 
 
 ## Helping Out: ##
@@ -99,11 +99,13 @@ Once you've made your changes, you can update your Geany by using the simple
 Python scripts included with geany-themes.  The `substitute` script will go
 through each `templates/filetypes.*.in` file and replace the substitution
 marker `@LEXERNAME_substitution@` with the contents of the 
-`mappings/LEXERNAME.conf` file and writes it into the `filedefs/filetypes.*` 
-file, ready to use with Geany.  The installation script just copies all the
-required files (ie. contents of `filedefs` and `colorschemes`) to your personal
-Geany config directory (defaults to `~/.config/geany`).  See note above about
-restarting Geany.  
+`mappings/LEXERNAME.conf` file and write the whole thing out into the 
+`filedefs/filetypes.*` file, ready to use with Geany.  The installation script
+just copies all of the required files (ie. contents of `filedefs` and 
+`colorschemes` directories) to your personal Geany config directory, assuming
+as a default that `~/.config/geany` is where your Geany configuration files
+are.  Both utilities have a `--help` option that shows usage.  See the note
+above about restarting Geany.  
 
 When creating a new theme, a command line session might look like this:
 
