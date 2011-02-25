@@ -66,8 +66,7 @@ to hack/contribute.
 
 ### Installing:
 
-*Note: replace `~/src` with wherever you would like to keep the files.  These
-are example commands only, don't just copy and paste them into a terminal.
+*Note: replace `~/src` with wherever you would like to keep the files.  These are example commands only, don't just copy and paste them into a terminal.
 
 <pre>
 killall geany
