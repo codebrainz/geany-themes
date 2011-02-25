@@ -22,18 +22,18 @@ programming skills are required at all to help out.
 _NOTE: this will overwrite any of your customized filedefs/colorschemes in 
 your home directory, you may want to back them up first, for example:_
 
-> $ cd ~/.config/geany
-> $ tar cjf themes-orig.tar.bz2 colorschemes/ filedefs/
+	$ cd ~/.config/geany
+	$ tar cjf themes-orig.tar.bz2 colorschemes/ filedefs/
 
 Copy all the `filetypes.*` files from the `filedefs` dir into your Geany 
 filedefs dir, for example `~/.config/geany/filedefs`.
 
-> $ cp -v filedefs/filetypes.* ~/.config/geany/filedefs
+	$ cp -v filedefs/filetypes.* ~/.config/geany/filedefs
 
 Copy all the `*.conf` files from the colorschemes dir into your Geany 
 colorschemes dir, for example `~/.config/geany/colorschems`.
 
-> $ cp -v colorschemes/*.conf ~/.config/geany/colorschemes
+	$ cp -v colorschemes/*.conf ~/.config/geany/colorschemes
 
 
 ## Simpler Installation: ##
@@ -60,32 +60,85 @@ to hack/contribute.
 _NOTE: replace `~/src` with wherever you would like to keep the files.  These 
 are example commands only, don't just copy and paste them into a terminal._
 
-> $ killall geany
-> $ cd ~/.config/geany
-> $ tar cjf themes-orig.tar.bz2 colorschemes/ filedefs/
-> $ rm -r colorschemes filedefs
-> $ mkdir -p ~/src
-> $ cd ~/src/
-> $ git clone git://github.com/codebrainz/geany-themes.git
-> $ ln -s ~/src/geany-themes/colorschemes ~/.config/geany/colorschemes
-> $ ln -s ~/src/geany-themes/filedefs ~/.config/geany/filedefs
-> $ geany -v
+	$ killall geany
+	$ cd ~/.config/geany
+	$ tar cjf themes-orig.tar.bz2 colorschemes/ filedefs/
+	$ rm -r colorschemes filedefs
+	$ mkdir -p ~/src
+	$ cd ~/src/
+	$ git clone git://github.com/codebrainz/geany-themes.git
+	$ ln -s ~/src/geany-themes/colorschemes ~/.config/geany/colorschemes
+	$ ln -s ~/src/geany-themes/filedefs ~/.config/geany/filedefs
+	$ geany -v
 
 ### Keeping up to Date: ###
 
-> $ cd ~/src/geany-themes
-> $ git stash
-> $ git pull
-> $ git stash pop
+	$ cd ~/src/geany-themes
+	$ git stash
+	$ git pull
+	$ git stash pop
 
 _NOTE: You'll need to fix any conflicts if you've made local changes._
 
+### Making Changes: ###
+
+Edit any of the `colorschemes/*.conf` files or `mappings/*.conf` files or 
+create a new colorscheme `.conf` file in the `colorschemes` directory  Using an
+existing theme (ex. `gedit.conf`) and modifying will be easier than from
+scratch.  When I get a chance I'll add a `README` in the `colorschemes`
+directory explaining in detail what all the named styles should be used for, 
+but for the most part, the name says it all.
+
+_NOTE: Geany doesn't update all of the styles when you select them through the
+`View->Editor->Color Schemes` menu, so you might have to restart Geany to see
+all of your changes take effect.  One of the styles that does not get applied
+without restarting Geany is the 'selection' named style, I haven't noticed any
+others yet._
+
+Once you've made your changes, you can update your Geany by using the simple
+Python scripts included with `geany-theme`.  The `substitute` script will go
+through each `templates/filetypes.*.in` file and replace the substitution
+marker `@LEXERNAME_substitution@` with the contents of the 
+`mappings/LEXERNAME.conf` file and writes it into the `filedefs/filetypes.*` 
+file, ready to use with Geany.  The installation script just copies all the
+required files (ie. contents of `filedefs` and `colorschemes`) to your personal
+Geany config directory (defaults to `~/.config/geany`).  See note above about
+restarting Geany.  
+
+When creating a new theme, a command line session might look like this:
+
+	$ cd ~/src/geany-themes
+	$ cp -v colorschemes/gedit.conf colorschemes/yournewtheme.conf
+	$ geany colorschemes/yournewtheme.conf &
+	... edit the theme .conf file and save ...
+	$ ./install
+	$ killall geany
+	$ geany -v
+	... debug output, possibly containing any problems with the theme ...
+
+When editing a mapping file, for example the Haskell lexer mappings, a command
+line session might look like this:
+
+	$ cd ~/src/geany-themes
+	$ cp -v mappings/haskell.conf{,.backup} # if you want
+	$ geany mappings/haskell.conf &
+	... edit the haskell.conf file and save ...
+	$ ./substitute
+	$ ./install
+	$ killall geany
+	$ geany -v
+	... debug output, possibly containing any problems with the mappings ...
+
+Then follow the 'Submitting your changes' section.  Don't forget to delete the
+`.backup` file if you made one, before making a patch.
+
+
 ### Submitting your changes: ###
 
-> $ cd ~/src/geany-themes
-> $ git diff > ../the_patch_name.patch
+	$ cd ~/src/geany-themes
+	$ git diff > ../the_patch_name.patch
 
-Send me your patch and I'll apply it here or send a 
+Send me your patch and I'll apply it after a quick review or send a 
 [pull request][pull_requests] on [GitHub][github] if you've forked the
 repository.
 
