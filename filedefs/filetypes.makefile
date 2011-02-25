@@ -1,7 +1,13 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # Edit these in the colorscheme .conf file intead
-@make_substitution@
+default=default
+comment=comment
+preprocessor=preprocessor
+identifier=identifier_1
+operator=operator
+target=keyword_1
+ideol=type
 
 [settings]
 # default extension used when saving files
