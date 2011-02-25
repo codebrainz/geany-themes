@@ -1,0 +1,135 @@
+#!/usr/bin/env python
+
+"""
+Checks theme file for consistency and possible errors.
+"""
+import os
+from ConfigParser import SafeConfigParser
+
+theme_file = "colorschemes/gedit.conf"
+error_code = 0
+
+_REQUIRED = {
+
+	"theme_info": ["name", "description", "version", "author", "url"],
+	
+	"named_styles": [
+		"default", "error", 
+
+		"selection", "current_line", "brace_good", "brace_bad",
+		"margin_line_number", "margin_folding", 
+		"fold_symbol_highlight", "indent_guide", "caret",
+		"marker_line", "marker_search", "marker_mark",
+		"call_tips", "white_space", 
+
+		"comment", "comment_doc", "comment_line", "comment_line_doc",
+		"comment_doc_keyword", "comment_doc_keyword_error",
+		 
+		"number", "number_1", "number_2",
+		 
+		"type", "class", "function", "parameter",
+		
+		"keyword", "keyword_1", "keyword_2", "keyword_3", "keyword_4",
+		
+		"identifier", "identifier_1", "identifier_2", "identifier_3",
+		"identifier_4",
+		
+		"string", "string_1", "string_2", "string_eol", "character",
+		"backtick", "here_doc",
+		
+		"label", "preprocessor", "regex", "operator", "decorator", 
+		"other", 
+
+		"tag", "tag_unknown", "tag_end", "attribute", 
+		"attribute_unknown", "value", "entity", 
+
+		"line_added", "line_removed", "line_changed"
+	]
+}
+
+VALUE_INVALID=0
+VALUE_REFERENCE=1
+VALUE_STYLE=2
+
+parser = SafeConfigParser()
+parser.read([theme_file])
+
+theme_base = os.path.basename(theme_file)
+
+#def is_ref_style(sect, opt):
+	#for o in parser.options(sect):
+		#if opt.startswith(o):
+			#return True
+	#else:
+		#return False
+		
+#def option_style(sect, opt):
+	#value = parser.get(sect, opt)
+	#if value.startswith("0x") or value(sect, opt).startswith(";"):
+	
+	#elif is_ref_style(sect, opt)
+		
+
+		
+def check_sections_options():
+	global error_code
+	for req_sect, req_options in _REQUIRED.items():
+		if not parser.has_section(req_sect):
+			print "%s: missing '%s' section" % (theme_base, sect)
+			error_code += 1
+		else:
+			for req_opt in req_options:
+				if not parser.has_option(req_sect, req_opt):
+					print "%s: missing '%s' option in '%s' section" % (
+								theme_base, req_opt, req_sect)
+					error_code += 1
+				else:
+					if not parser.get(req_sect, req_opt):
+						print ("%s: missing value for " % theme_base +
+							"'%s' option in " % req_opt +
+							"'%s' section" % req_sect)
+						error_code += 1
+
+#def check_refs():
+	#for sect in parser.sections():
+		
+		#for opt in parser.options(sect):
+			
+			#if is_ref_style(sect, opt):
+				
+				
+
+
+
+
+
+check_sections_options()
+
+if error_code == 0:
+	print "%s: no problems detected" % theme_base
+else:
+	print "%s: %d problems detected" % (theme_base, error_code)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
