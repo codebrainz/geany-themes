@@ -4,7 +4,7 @@ Geany Color Themes
 geany-themes is a set of filedefs and colorschemes containing some really nice
 themes.  I have ported almost all of the existing Geany themes I could find to
 use the new filedefs so that you can still use those if you like them.  Also
-included is an `alt.conf` theme, ported from Geany's to make sure you can still
+included is an `alt.conf` theme, ported from Geany to make sure you can still
 use that as well, if you like it.
 
 Some of the new themes were ported from the 
@@ -21,10 +21,9 @@ point and there is more information in the
 No programming skills are required at all to help out.
 
 
-# Installation:
+## Installation:
 
-*Note: this will overwrite any of your customized filedefs/colorschemes in
-      your home directory, you may want to back them up first, for example:
+*Note: this will overwrite any of your customized filedefs/colorschemes in your home directory, you may want to back them up first, for example:
 
 <pre>
 $ cd ~/.config/geany
@@ -46,26 +45,26 @@ $ cp -v colorschemes/*.conf ~/.config/geany/colorschemes
 </pre>
 
 
-# Simpler Installation:
+## Simpler Installation:
 
 There is a simple installation script that can copy the files for you, see
 `./install --help` for usage.  It was not tested on Windows.
 
 
-# Uninstallation:
+## Uninstallation:
 
 Remove all the files copied in 'Installation' and put the backed up files
 back (if any).
 
 
-# Helping Out:
+## Helping Out:
 
 You can use the below steps to make it easier to contribute changes back or
 if you want to easily keep up to date with geany-themes.  There is a README
 file in the sub directories with some info that will be helpful if you want
 to hack/contribute.
 
-## Installing:
+### Installing:
 
 *Note: replace `~/src` with wherever you would like to keep the files.  These
 are example commands only, don't just copy and paste them into a terminal.
@@ -83,7 +82,7 @@ ln -s ~/src/geany-themes/filedefs ~/.config/geany/filedefs
 geany -v
 </pre>
 
-## Keeping up to Date:
+### Keeping up to Date:
 
 <pre>
 cd ~/src/geany-themes
@@ -94,7 +93,7 @@ git stash pop
 
 *Note: You'll need to fix any conflicts if you've made local changes.
 
-## Submitting your changes:
+### Submitting your changes:
 
 <pre>
 cd ~/src/geany-themes
