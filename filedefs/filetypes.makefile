@@ -4,9 +4,9 @@
 default=default
 comment=comment
 preprocessor=preprocessor
-identifier=identifier_1
+identifier=keyword_1
 operator=operator
-target=keyword_1
+target=label
 ideol=type
 
 
