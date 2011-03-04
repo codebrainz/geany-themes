@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+
+import os
+import glob
+
+PREFIX = "nb_"
+
+conf_count = 0
+
+for conf_file in glob.glob("colorschemes/*.conf"):
+	
+	if os.path.basename(conf_file).startswith(PREFIX):
+		continue
+		
+	conf_file = os.path.abspath(conf_file)
+	name, ext = os.path.splitext(os.path.basename(conf_file))
+	newbasename = "%s-nobold%s" % (name, ext)
+	dir_name = os.path.dirname(conf_file)
+	newname = os.path.join(dir_name, newbasename)
+			
+	with open(newname, "w") as nb_cfg:
+	
+		with open(conf_file, "r") as cfg:
+			
+			for line in cfg:
+				
+				fields = line.strip().split(";")
+				
+				newline = ""
+				if len(fields) > 1: 	# normal style
+					for i,fld in enumerate(fields):
+						newline += "%s;"%fld if i!=2 else "false;"
+				else:								# named style
+					newline = line.strip().replace(",bold", "").replace(", bold", "")
+
+				nb_cfg.write("%s\n" % newline)
+	
+	print "Generated %s from %s" % (newbasename, os.path.basename(conf_file))
+	conf_count += 1
+
+print "Converted %d themes to not use bold.  New themes have a %s prefix." % (
+					conf_count, PREFIX)
+		
