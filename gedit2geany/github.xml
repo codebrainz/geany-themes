@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ Copyright (C) 2009 Felipe Mesquita <fmesquitacunha@gmail.com>
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ Boston, MA 02111-1307, USA.
+
+-->
+<style-scheme id="github" _name="Github" version="1.0">
+  <author>Felipe Mesquita</author>
+  <description>A clone of the Github theme for Gedit.</description>
+
+<!-- Colors -->
+
+  <color name="background" value="#F8F8FF"/>
+  <color name="caret" value="#000000"/>
+  <color name="foreground" value="#000000"/>
+  <color name="highlight" value="#00000012"/>
+  <color name="comment" value="#999988"/>
+  <color name="keyword" value="#000000"/>
+  <color name="function" value="#990000"/>
+  <color name="class" value="#445588"/>
+  <color name="number" value="#009999"/>
+  <color name="variable" value="#008080"/>
+  <color name="constant" value="#0F8787"/>
+  <color name="constant2" value="#0F8787"/>
+  <color name="string" value="#DD1144"/>
+  <color name="symbol" value="#AA2C8C"/>
+  <color name="identifier" value="#0086b3"/>
+
+<!-- Global Settings -->
+
+  <style name="text" foreground="foreground" background="background"/>
+  <style name="cursor" foreground="foreground"/>
+  <style name="current-line" background="background"/>
+  <style name="line-numbers" foreground="foreground" background="background"/>
+  
+<!-- Bracket Matching -->
+  <style name="bracket-match" background="highlight"/>
+  <style name="bracket-mismatch" background="highlight" bold="true"/>
+  <style name="search-match" foreground="foreground" background="caret"/>
+
+<!-- Comments -->
+  <style name="def:comment" foreground="comment" italic="true"/>
+  <style name="def:shebang" foreground="comment" italic="true"/>
+  <style name="def:doc-comment-element" foreground="comment" bold="true"/>
+
+<!-- Constants and Variables-->
+  <style name="def:constant" foreground="constant"/>
+  <style name="def:string" foreground="string"/>
+  <style name="def:special-char" foreground="string"/>
+  <style name="def:special-constant" foreground="constant" bold="true"/>
+  <style name="def:boolean" foreground="constant"/>
+  <style name="def:number" foreground="number"/>
+  <style name="def:floating-point" foreground="number"/>
+  <style name="def:keyword" foreground="keyword" bold="true"/>
+  <style name="def:builtin" foreground="foreground" bold="true"/>
+  <style name="def:variable" foreground="variable"/>
+  
+<!-- Identifiers -->
+  <style name="def:identifier" foreground="identifier"/>
+
+<!-- Statements -->
+  <style name="def:statement" foreground="constant"/>
+
+<!-- Types -->
+  <style name="def:type" foreground="class" bold="true"/>
+  
+<!-- Others -->
+  <style name="def:error" foreground="highlight" bold="true"/>
+  <style name="def:note" foreground="highlight" bold="true"/>
+  <style name="def:net-address-in-comment" foreground="variable" italic="false" underline="true"/>
+  <style name="def:preprocessor" foreground="highlight"/>
+    
+<!-- Unknown? -->
+  <style name="def:specials" background="identifier"/>
+
+<!-- C Styles -->
+  <style name="c:preprocessor" map-to="def:special-char"/>
+
+<!-- Diff Styles -->
+  <style name="diff:ignore" foreground="highlight"/>
+
+<!-- Ruby Styles -->
+  <style name="ruby:module-handler" foreground="identifier"/>
+  <style name="ruby:symbol" foreground="symbol"/>
+  <style name="ruby:regex" foreground="number"/>
+  <style name="ruby:function" foreground="function"/>
+
+<!-- SH Styles -->
+  <style name="sh:others" map-to="text"/>
+  
+<!-- XML Styles -->
+  <style name="xml:attribute-name" foreground="keyword"/>
+  <style name="xml:element-name" foreground="keyword"/>
+
+</style-scheme>
