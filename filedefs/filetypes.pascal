@@ -1,21 +1,27 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
-# foreground;background;bold;italic
-default=0x000000;0xffffff;false;false
-identifier=0x000000;0xffffff;false;false
-comment=0xd00000;0xffffff;false;false
-comment2=0x3f5fbf;0xffffff;false;false
-commentline=0xd00000;0xffffff;false;false
-preprocessor=0x007f7f;0xffffff;false;false
-preprocessor2=0x007f7f;0xffffff;false;false
-number=0x007F00;0xffffff;false;false
-hexnumber=0x007F00;0xffffff;false;false
-word=0x111199;0xffffff;true;false
-string=0xff901e;0xffffff;false;false
-stringeol=0x000000;0xe0c0e0;false;false
-character=0x404000;0xffffff;false;false
-operator=0x301010;0xffffff;false;false
-asm=0x804080;0xffffff;false;false
+# Edit these in the colorscheme .conf file intead
+default=default
+comment=comment
+commentline=comment
+commentdoc=comment_doc
+number=number_1
+word=keyword_1
+word2=keyword_2
+string=string_1
+character=string_1
+uuid=other
+preprocessor=preprocessor
+operator=operator
+identifier=identifier_1
+stringeol=string_eol
+verbatim=string_2
+regex=regex
+commentlinedoc=comment_doc
+commentdockeyword=comment_doc_keyword
+commentdockeyworderror=comment_doc_keyword_error
+globalclass=class
+
 
 
 [keywords]
