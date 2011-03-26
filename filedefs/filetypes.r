@@ -12,8 +12,7 @@ string=string_1
 string2=string_2
 identifier=identifier
 infix=function
-infixeol=function,italic
-
+infixeol=function
 
 [keywords]
 # all items must be in one line

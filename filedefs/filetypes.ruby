@@ -15,11 +15,11 @@ operator=operator
 identifier=identifier_1
 modulename=type
 backticks=backticks
-instancevar=default,italic
-classvar=default,bold,italic
+instancevar=default
+classvar=default
 datasection=default
 heredelim=operator
-worddemoted=keyword_1,bold
+worddemoted=keyword_1
 stdin=default
 stdout=default
 stderr=default
@@ -35,7 +35,6 @@ string_qw=string_2
 upper_bound=default
 error=error
 pod=comment_doc
-
 
 [keywords]
 # all items must be in one line

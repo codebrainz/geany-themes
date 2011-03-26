@@ -14,14 +14,13 @@ preprocessor=preprocess
 operator=operator
 identifier=identifier_1
 stringeol=string_eol
-function_basic=function,bold
+function_basic=function
 function_other=type
 coroutines=class
 word5=keyword_1
 word6=keyword_2
 word7=keyword_3
 word8=keyword_4
-
 
 [keywords]
 # all items must be in one line

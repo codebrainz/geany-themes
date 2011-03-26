@@ -9,7 +9,6 @@ operator=operator
 target=label
 ideol=type
 
-
 [settings]
 # default extension used when saving files
 extension=mak

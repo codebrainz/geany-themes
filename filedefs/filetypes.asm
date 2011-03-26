@@ -17,7 +17,6 @@ character=string_1
 stringeol=string_eol
 extinstruction=keyword_4
 
-
 [keywords]
 # all items must be in one line
 # this is by default a very simple instruction set; not of Intel or so

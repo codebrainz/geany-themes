@@ -2,26 +2,20 @@
 [styling]
 # Edit these in the colorscheme .conf file intead
 default=default
-comment=comment
-commentline=comment
-commentdoc=comment_doc
-number=number_1
-word=keyword_1
-word2=keyword_2
-string=string_1
-character=string_1
-uuid=other
-preprocessor=preprocessor
-operator=operator
 identifier=identifier_1
+comment=comment
+comment2=comment
+commentline=comment
+preprocessor=preprocessor
+preprocessor2=preprocessor
+number=number_1
+hexnumber=number_1
+word=keyword_1
+string=string
 stringeol=string_eol
-verbatim=string_2
-regex=regex
-commentlinedoc=comment_doc
-commentdockeyword=comment_doc_keyword
-commentdockeyworderror=comment_doc_keyword_error
-globalclass=class
-
+character=character
+operator=operator
+asm=number_2
 
 
 [keywords]

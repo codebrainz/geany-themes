@@ -14,7 +14,6 @@ number=number_1
 string=string_1
 locale=other
 
-
 [keywords]
 # all items must be in one line
 primary=ABORT EXIT DO LOOP UNLOOP BEGIN UNTIL WHILE REPEAT EXIT IF ELSE THEN CASE ENDCASE OF ENDOF
@@ -28,7 +27,7 @@ extension=fs
 #wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
 # single comments, like # in this file
-comment_single=\\
+comment_single=\\ 
 # multiline comments
 comment_open=(
 comment_close= )

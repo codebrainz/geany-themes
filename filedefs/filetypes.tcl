@@ -18,7 +18,6 @@ worditcl=keyword_3
 wordtkcmds=keyword_4
 wordexpand=keyword_4
 
-
 [keywords]
 # all items must be in one line
 tcl=after append apply array auto_execok auto_import auto_load auto_load_index auto_mkindex auto_mkindex_old auto_qualify auto_reset beep bgerror binary break case catch cd chan clock close concat continue coroutine dde default dict echo else elseif encoding eof error eval exec exit expr fblocked fconfigure fcopy file fileevent filename flush for foreach format gets glob global history http if incr info interp join lappend lassign lindex linsert list llength load loadTk lrange lrepeat lreplace lreverse lsearch lset lsort mathfunc mathop memory msgcat namespace oo::class oo::copy oo::define oo::objdefine oo::object open package parray pid pkg::create pkg_mkIndex platform platform::shell Platform-specific proc puts pwd read refchan regexp registry regsub rename resource re_syntax return Safe Base scan seek set socket source split string subst switch tailcall Tcl tcl::prefix tcl_endOfWord tcl_findLibrary tclLog tclMacPkgSearch tclPkgSetup tclPkgUnknown tcl_startOfNextWord tcl_startOfPreviousWord tcltest tclvars tcl_wordBreakAfter tcl_wordBreakBefore tell throw time tm trace try unknown unload unset update uplevel upvar variable vwait while yield zlib

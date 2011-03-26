@@ -10,13 +10,12 @@ operator=operator
 identifier=identifier_1
 stringeol=string_eol
 keyword=keyword_1
-stdoperator=operator, bold
+stdoperator=operator
 attribute=attribute
 stdfunction=function
 stdpackage=preprocessor
 stdtype=type
 userword=keyword_2
-
 
 [keywords]
 # all items must be in one line
