@@ -11,7 +11,7 @@ plan to port the rest of them.  There is also a bunch of available themes for
 [vim][vim_themes] and [TextMate][textmate_themes] that would also be nice to 
 port.
 
-Your help creating new themes and checking the `mappings/*.conf` files would
+Your help creating new themes and checking the `filedefs/filetype.*` files would
 be greatly appreciated.  You can use one of the existing themes as a starting
 point and there is more information in the [Geany Manual][geany_manual].  No 
 programming skills are required at all to help out.
