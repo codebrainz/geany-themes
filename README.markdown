@@ -18,8 +18,8 @@ programming skills are required at all to help out.
 
 _UPDATE: Since Geany r5596, the substitution and mappings hackery is no longer
 needed.  Geany now supports copying the styling of one filetype to another.
-I've removed those parts from geany-themes, simplifying the entire project.
-**Sweet!** _
+I've removed those parts from geany-themes, simplifying the entire project._
+**Sweet!**
 
 
 ## Installation: ##
