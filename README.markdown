@@ -82,7 +82,7 @@ _NOTE: You'll need to fix any conflicts if you've made local changes._
 
 ### Making Changes: ###
 
-Edit any of the `colorschemes/*.conf` files or `mappings/*.conf` files or 
+Edit any of the `colorschemes/*.conf` files or `filedefs/filetypes.*` files or 
 create a new colorscheme `.conf` file in the `colorschemes` directory.  Using an
 existing theme (ex. `gedit.conf`) and modifying will be easier than from
 scratch.  When I get a chance I'll add a `README` in the `colorschemes`
@@ -96,15 +96,11 @@ without restarting Geany is the 'selection' named style, I haven't noticed any
 others yet._
 
 Once you've made your changes, you can update your Geany by using the simple
-Python scripts included with geany-themes.  The `substitute` script will go
-through each `templates/filetypes.*.in` file and replace the substitution
-marker `@LEXERNAME_substitution@` with the contents of the 
-`mappings/LEXERNAME.conf` file and write the whole thing out into the 
-`filedefs/filetypes.*` file, ready to use with Geany.  The installation script
-just copies all of the required files (ie. contents of `filedefs` and 
-`colorschemes` directories) to your personal Geany config directory, assuming
-as a default that `~/.config/geany` is where your Geany configuration files
-are.  Both utilities have a `--help` option that shows usage.  See the note
+Python scripts included with geany-themes.  The installation script just copies
+all of the required files (ie. contents of `filedefs` and `colorschemes` 
+directories) to your personal Geany config directory, assuming as a default 
+that `~/.config/geany` is where your Geany configuration files are.  The
+installation utility has a `--help` option that shows usage.  See the note 
 above about restarting Geany.  
 
 When creating a new theme, a command line session might look like this:
@@ -118,14 +114,13 @@ When creating a new theme, a command line session might look like this:
 	$ geany -v
 	... debug output, possibly containing any problems with the theme ...
 
-When editing a mapping file, for example the Haskell lexer mappings, a command
-line session might look like this:
+When editing a filetypes.* file, for example the Haskell lexer mappings, a 
+command line session might look like this:
 
 	$ cd ~/src/geany-themes
-	$ cp -v mappings/haskell.conf{,.backup} # if you want
-	$ geany mappings/haskell.conf &
+	$ cp -v filedefs/filetypes.haskell{,.backup} # if you want
+	$ geany filedefs/filetypes.haskell &
 	... edit the haskell.conf file and save ...
-	$ ./substitute
 	$ ./install
 	$ killall geany
 	$ geany -v
