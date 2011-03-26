@@ -1,7 +1,20 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # Edit these in the colorscheme .conf file intead
-@sh_substitution@
+default=default
+commentline=comment
+number=number_1
+word=keyword_1
+string=string_1
+character=string_1
+operator=operator
+identifier=identifier_1
+backticks=backtick
+param=parameter
+scalar=number
+error=error
+here_delim=operator
+here_q=here_doc
 
 [keywords]
 primary=break case continue do done elif else esac eval exit export fi for function goto if in integer return set shift then until while

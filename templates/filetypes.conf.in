@@ -1,7 +1,12 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # Edit these in the colorscheme .conf file intead
-@conf_substitution@
+default=value
+comment=comment
+section=tag
+key=attribute
+assignment=operator
+defval=value
 
 # the lexer doesn't support keywords
 

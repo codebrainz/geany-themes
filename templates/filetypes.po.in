@@ -1,7 +1,15 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # Edit these in the colorscheme .conf file intead
-@po_substitution@
+default=default
+comment=comment
+msgid=keyword_1
+msgid_text=keyword_1
+msgstr=keyword_2
+msgstr_text=keyword_2
+msgctxt=keyword_3
+msgctxt_text=keyword_3
+fuzzy=string_1
 
 [settings]
 # default extension used when saving files

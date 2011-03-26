@@ -1,7 +1,23 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # Edit these in the colorscheme .conf file intead
-@haskell_substitution@
+default=default
+commentline=comment
+commentblock=comment
+commentblock2=comment
+commentblock3=comment
+number=number_1
+keyword=keyword_1
+import=preprocessor
+string=string_1
+character=string_2
+class=class
+operator=operator
+identifier=identifier_1
+instance=type
+capital=string_2
+module=function
+data=number_2
 
 [keywords]
 # all items must be in one line

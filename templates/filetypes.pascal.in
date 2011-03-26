@@ -1,7 +1,21 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # Edit these in the colorscheme .conf file intead
-@pascal_substitution@
+default=default
+identifier=identifier_1
+comment=comment
+comment2=comment
+commentline=comment
+preprocessor=preprocessor
+preprocessor2=preprocessor
+number=number_1
+hexnumber=number_1
+word=keyword_1
+string=string
+stringeol=string_eol
+character=character
+operator=operator
+asm=number_2
 
 
 [keywords]

@@ -1,7 +1,21 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
 # foreground;background;bold;italic
-@cmake_substitution@
+default=default
+comment=comment
+stringdq=string_1
+stringlq=string_1
+stringrq=string_1
+command=function
+parameters=parameter
+variable=identifier_1
+userdefined=type
+whiledef=keyword_1
+foreachdef=keyword_1
+ifdefinedef=keyword_1
+macrodef=preprocessor
+stringvar=string_2
+number=number_1
 
 [keywords]
 # all items must be in one line

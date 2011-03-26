@@ -1,7 +1,22 @@
 # For complete documentation of this file; please see Geany's main documentation
 [styling]
 # Edit these in the colorscheme .conf file intead
-@tcl_substitution@
+default=default
+comment=comment
+commentline=comment_line
+number=number_1
+operator=operator
+identifier=identifier_1
+wordinquote=string_1
+inquote=string_1
+substitution=function
+modifier=operator
+expand=default
+wordtcl=keyword_1
+wordtk=keyword_2
+worditcl=keyword_3
+wordtkcmds=keyword_4
+wordexpand=keyword_4
 
 [keywords]
 # all items must be in one line
