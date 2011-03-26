@@ -1,6 +1,6 @@
 # For complete documentation of this file, please see Geany's main documentation
 [styling]
-# foreground;background;bold;italic
+# Edit these in the colorscheme .conf file intead
 @markdown_substitution@
 
 [settings]
