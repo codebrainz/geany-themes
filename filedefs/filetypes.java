@@ -1,5 +1,5 @@
 # For complete documentation of this file, please see Geany's main documentation
-[styling=cpp]
+[styling=C++]
 
 [keywords]
 primary=abstract assert break case catch class const continue default do else extends final finally for future generic goto if implements import inner instanceof interface native new outer package private protected public rest return static super switch synchronized this throw throws transient try var volatile while true false null
