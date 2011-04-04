@@ -21,6 +21,8 @@ commentlinedoc=comment_doc
 commentdockeyword=comment_doc_keyword
 commentdockeyworderror=comment_doc_keyword_error
 globalclass=class
+# """verbatim"""
+tripleverbatim=string_2
 
 [keywords]
 # all items must be in one line
