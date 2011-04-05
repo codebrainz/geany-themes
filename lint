@@ -3,123 +3,260 @@
 """
 Checks theme file for consistency and possible errors.
 """
-import os
-from ConfigParser import SafeConfigParser
 
-theme_file = "colorschemes/gedit.conf"
-error_code = 0
+import os, sys
+from ConfigParser import SafeConfigParser
 
 _REQUIRED = {
 
 	"theme_info": ["name", "description", "version", "author", "url"],
-	
+
 	"named_styles": [
-		"default", "error", 
+		"default", "error",
 
 		"selection", "current_line", "brace_good", "brace_bad",
-		"margin_line_number", "margin_folding", 
+		"margin_line_number", "margin_folding",
 		"fold_symbol_highlight", "indent_guide", "caret",
 		"marker_line", "marker_search", "marker_mark",
-		"call_tips", "white_space", 
+		"call_tips", "white_space",
 
 		"comment", "comment_doc", "comment_line", "comment_line_doc",
 		"comment_doc_keyword", "comment_doc_keyword_error",
-		 
+
 		"number", "number_1", "number_2",
-		 
+
 		"type", "class", "function", "parameter",
-		
+
 		"keyword", "keyword_1", "keyword_2", "keyword_3", "keyword_4",
-		
+
 		"identifier", "identifier_1", "identifier_2", "identifier_3",
 		"identifier_4",
-		
+
 		"string", "string_1", "string_2", "string_eol", "character",
 		"backtick", "here_doc",
-		
-		"label", "preprocessor", "regex", "operator", "decorator", 
-		"other", 
 
-		"tag", "tag_unknown", "tag_end", "attribute", 
-		"attribute_unknown", "value", "entity", 
+		"label", "preprocessor", "regex", "operator", "decorator",
+		"other",
+
+		"tag", "tag_unknown", "tag_end", "attribute",
+		"attribute_unknown", "value", "entity",
 
 		"line_added", "line_removed", "line_changed"
 	]
 }
 
-VALUE_INVALID=0
-VALUE_REFERENCE=1
-VALUE_STYLE=2
 
-parser = SafeConfigParser()
-parser.read([theme_file])
+warning_count = 0
+error_count = 0
 
-theme_base = os.path.basename(theme_file)
 
-#def is_ref_style(sect, opt):
-	#for o in parser.options(sect):
-		#if opt.startswith(o):
-			#return True
-	#else:
-		#return False
-		
-#def option_style(sect, opt):
-	#value = parser.get(sect, opt)
-	#if value.startswith("0x") or value(sect, opt).startswith(";"):
-	
-	#elif is_ref_style(sect, opt)
-		
+def warning(msg):
+	global warning_count
+	warning_count += 1
+	sys.stderr.write("warning #%d: %s\n" % (warning_count, msg))
 
-		
-def check_sections_options():
-	global error_code
-	for req_sect, req_options in _REQUIRED.items():
-		if not parser.has_section(req_sect):
-			print "%s: missing '%s' section" % (theme_base, sect)
-			error_code += 1
+
+def error(msg):
+	global error_count
+	error_count += 1
+	sys.stderr.write("error #%d: %s\n" % (error_count, msg))
+
+
+def check_group_and_fields(cfg, group):
+	"""
+	Errors and quits if the group is missing, warns only if there
+	are options missing.
+	"""
+	exit_status = True
+	if not cfg.has_section(group):
+		error("Missing '%s' group!" % group)
+		return False
+	for field in _REQUIRED[group]:
+		if not cfg.has_option(group, field):
+			warning("Missing '%s' field in '%s' group!" % (field, group))
+			exit_status = False
+		elif not cfg.get(group, field).strip():
+			warning("Missing value for '%s' field in '%s' group!" % (field, group))
+			exit_status = False
+	return exit_status
+
+
+def parse_color(color):
+	" Returns RGB tuple on success, False on failure. "
+
+	orig_color = color
+	color = color.lower().strip()
+
+	if color.startswith('#'):
+		error("Bad color '%s', colors should start with 0x not #." % orig_color)
+		return False
+	if not color.startswith('0x'):
+		error("Bad color '%s', colors should start with 0x." % orig_color)
+		return False
+	color = color.replace('0x', '')
+	if not len(color) == 6:
+		error("Bad color '%s', colors should start with 0x followed by six hex digits." % orig_color)
+		return False
+
+	r, g, b = color[0:2], color[2:4], color[4:6]
+
+	try:
+		r = int(r, 16)
+	except ValueError:
+		error("Bad color '%s', red value should be hex digits between 00 and ff." % orig_color)
+		return False
+	try:
+		g = int(g, 16)
+	except ValueError:
+		error("Bad color '%s', green value should be hex digits between 00 and ff." % orig_color)
+		return False
+	try:
+		b = int(b, 16)
+	except ValueError:
+		error("Bad color '%s', blue value should be hex digits between 00 and ff." % orig_color)
+		return False
+
+	return r, g, b
+
+
+def parse_style(key, style):
+	"""
+	Returns either a FG,BG,bold,italic tuple or a STYLE,toggle_bold,toggle_italic
+	tuple if the style could be parsed, or False if it couldn't.
+	"""
+
+	style = style.strip()
+
+	# regular FG;BG;bold;italic format
+	if ';' in style:
+
+		if len(style.split(';')) > 4:
+			error("Bad style '%s', too many fields to parse." % style.strip())
+			return False
+
+		fields = [ f.strip() for f in style.split(';') ]
+
+		if fields[0]: # fg_color
+			if not parse_color(fields[0]):
+				return False
+			fields[0] = parse_color(fields[0])
+
+		if len(fields) > 1:
+			if fields[1]: # bg_color
+				if not parse_color(fields[1]):
+					return False
+				fields[1] = parse_color(fields[1])
 		else:
-			for req_opt in req_options:
-				if not parser.has_option(req_sect, req_opt):
-					print "%s: missing '%s' option in '%s' section" % (
-								theme_base, req_opt, req_sect)
-					error_code += 1
+			fields.append(None)
+
+		if len(fields) > 2: # bold
+			if fields[2] == "true": fields[2] = True
+			elif fields[2] == "false": fields[2] = False
+			elif fields[2] == "": fields[2] = None
+			else: return False
+		else:
+			fields.append(None)
+
+		if len(fields) > 3: # italic
+			if fields[3] == "true": fields[3] = True
+			elif fields[3] == "false": fields[3] = False
+			elif fields[3] == "": fields[3] = None
+			else: return False
+		else:
+			fields.append(None)
+
+		return fields[0], fields[1], fields[2], fields[3]
+
+	# named style copy with optional toggle bold and/or italic
+	elif ',' in style:
+
+		toggle_bold = None
+		toggle_italic = None
+
+		if len(style.split(',')) > 3:
+			error("Bad style '%s', too many fields to parse." % style)
+			return False
+
+		fields = [ f.strip() for f in style.split(',') ]
+
+		if fields[0] not in _REQUIRED["named_styles"]:
+			error("Bad style '%s', unknown named style." % fields[0])
+			return False
+
+		if len(fields) > 1:
+
+			if fields[1] == "bold": toggle_bold = True
+			elif fields[1] == "italic": toggle_italic = True
+			else:
+				error("Bad style '%s', expected bold or italic.")
+				return False
+
+			if len(fields) > 2:
+				if fields[2] == "italic": toggle_italic = True
 				else:
-					if not parser.get(req_sect, req_opt):
-						print ("%s: missing value for " % theme_base +
-							"'%s' option in " % req_opt +
-							"'%s' section" % req_sect)
-						error_code += 1
+					error("Bad style '%s', expected italic.")
+					return False
+			else:
+				fields.append(None)
+		else:
+			fields.extend([None, None])
 
-#def check_refs():
-	#for sect in parser.sections():
-		
-		#for opt in parser.options(sect):
-			
-			#if is_ref_style(sect, opt):
-				
-				
+		return fields[0], fields[1], fields[2]
 
-
-
-
-
-check_sections_options()
-
-if error_code == 0:
-	print "%s: no problems detected" % theme_base
-else:
-	print "%s: %d problems detected" % (theme_base, error_code)
+	# with only 1 item, must be either named style or color
+	else:
+		if style in _REQUIRED["named_styles"]:
+			return style, False, False
+		if parse_color(style):
+			return parse_color(style), None, None, None
+		else:
+			error("Bad style '%s', I don't know what this is." % style)
+			return False
 
 
 
+def run_lint(in_file):
+	"""
+	Checks the in_file and returns 0 on success or greater than
+	0 on failure.
+	"""
+
+	return_code = 0
+
+	if not os.path.isfile(in_file):
+		error("Input file '%s' does not exist." % in_file, True)
+
+	cfg = SafeConfigParser()
+	cfg.read([in_file])
+
+	# check sections and options
+	if not check_group_and_fields(cfg, "theme_info"):
+		return_code += 1
+	if not check_group_and_fields(cfg, "named_styles"):
+		return_code += 1
+
+	# check parsing each style and color
+	for style_key in cfg.options("named_styles"):
+		val = cfg.get("named_styles", style_key)
+		if not parse_style(style_key, val):
+			return_code += 1
+
+	return return_code
 
 
+if __name__ == "__main__":
 
-
-
-
-
-
+	if len(sys.argv) == 2:
+		sys.stdout.write("Checking file '%s'...\n--------\n" % sys.argv[1])
+		sys.stdout.flush()
+		return_code = run_lint(sys.argv[1])
+		if return_code > 0:
+			sys.stdout.write("--------\nThere were %d warnings and errors encountered.\n" % (return_code + 1))
+		sys.exit(return_code)
+	else:
+		error("Missing input file.")
+		sys.stdout.write("Usage %s THEME_FILE.conf\n" % sys.argv[0])
+		sys.exit(-1)
 
 
 
