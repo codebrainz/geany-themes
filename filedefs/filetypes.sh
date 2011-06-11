@@ -11,9 +11,9 @@ operator=operator
 identifier=identifier_1
 backticks=backtick
 param=parameter
-scalar=number
+scalar=scalar
 error=error
-here_delim=operator
+here_delim=here_doc
 here_q=here_doc
 
 [keywords]
