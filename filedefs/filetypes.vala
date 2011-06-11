@@ -1,5 +1,5 @@
 # For complete documentation of this file, please see Geany's main documentation
-[styling=C++]
+[styling=C]
 
 [keywords]
 # all items must be in one line

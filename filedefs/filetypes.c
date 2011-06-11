@@ -1,5 +1,28 @@
 # For complete documentation of this file, please see Geany's main documentation
-[styling=C++]
+[styling]
+# Edit these in the colorscheme .conf file intead
+default=default
+comment=comment
+commentline=comment
+commentdoc=comment_doc
+number=number_1
+word=keyword_1
+word2=keyword_2
+string=string_1
+character=string_1
+uuid=other
+preprocessor=preprocessor
+operator=operator
+identifier=identifier_1
+stringeol=string_eol
+verbatim=string_2
+regex=regex
+commentlinedoc=comment_doc
+commentdockeyword=comment_doc_keyword
+commentdockeyworderror=comment_doc_keyword_error
+globalclass=class
+# """verbatim"""
+tripleverbatim=string_2
 
 [keywords]
 # all items must be in one line
