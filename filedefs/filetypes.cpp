@@ -26,8 +26,8 @@ tripleverbatim=string_2
 
 [keywords]
 # all items must be in one line
-primary=and and_eq asm auto bitand bitor bool break case catch char class compl const const_cast continue default delete do double dynamic_cast else enum explicit export extern false float for friend goto if inline int long mutable namespace new not not_eq operator or or_eq private protected public register reinterpret_cast return short signed sizeof static static_cast struct switch template this throw true try typedef typeid typename union unsigned using virtual void volatile wchar_t while xor xor_eq
-secondary=
+primary=and and_eq asm auto bitand bitor break case catch class compl const const_cast continue default delete do dynamic_cast else enum explicit export extern false for friend goto if inline mutable namespace new not not_eq operator or or_eq private protected public register reinterpret_cast return sizeof static static_cast struct switch template this throw true try typedef typeid typename union using virtual volatile while xor xor_eq
+secondary=bool char double float int long short signed unsigned void wchar_t
 # these are some doxygen keywords (incomplete)
 docComment=attention author brief bug class code date def enum example exception file fn namespace note param remarks return see since struct throw todo typedef var version warning union
 
