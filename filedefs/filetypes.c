@@ -26,8 +26,8 @@ tripleverbatim=string_2
 
 [keywords]
 # all items must be in one line
-primary=asm auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while FALSE NULL TRUE
-secondary=
+primary=asm auto break case const continue default do else enum extern for goto if inline register restrict return sizeof static struct switch typedef union volatile while FALSE NULL TRUE false null true
+secondary=bool char double float int long short signed unsigned void _Bool wchar_t
 # these are some doxygen keywords (incomplete)
 docComment=attention author brief bug class code date def enum example exception file fn namespace note param remarks return see since struct throw todo typedef var version warning union
 
