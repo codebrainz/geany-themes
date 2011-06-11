@@ -115,7 +115,7 @@ caret=0x000000;0x000000;false;
 marker_line=0x000000;0xffff00;
 marker_search=0x000000;0x0000f0;
 marker_mark=0x000000;0xb8f4b8;
-calltips=0xc0c0c0;0xffffff;false;false
+call_tips=0xc0c0c0;0xffffff;false;false
 white_space=0xc0c0c0;0xffffff;true;false
 
 comment=0xd00000
@@ -149,16 +149,17 @@ identifier_4=identifier_1
 string=0xff901e
 string_1=string
 string_2=string_1
-stringeol=0x000000;0xe0c0e0;false;false
+string_eol=0x000000;0xe0c0e0;false;false
 character=string_1
 backtick=string_2
 here_doc=string_2
 
+scalar=string_2
 label=default,bold
 preprocessor=0x007f7f
 regex=number_1
 operator=0x301010
-decorator=strin_1,bold
+decorator=string_1,bold
 other=0x404080
 
 tag=type
