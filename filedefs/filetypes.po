@@ -9,7 +9,7 @@ msgstr=keyword_2
 msgstr_text=string_1
 msgctxt=keyword_3
 msgctxt_text=string_1
-fuzzy=string_1
+fuzzy=comment_doc_keyword
 
 [settings]
 # default extension used when saving files
