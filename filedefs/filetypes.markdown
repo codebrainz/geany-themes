@@ -2,8 +2,8 @@
 [styling]
 # Edit these in the colorscheme .conf file intead
 default=default
-strong=default
-emphasis=default
+strong=string_3
+emphasis=string_4
 header1=keyword_1
 header2=keyword_1
 header3=keyword_1
