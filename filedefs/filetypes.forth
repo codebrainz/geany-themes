@@ -27,7 +27,7 @@ extension=fs
 #wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
 # single comments, like # in this file
-comment_single=\\ 
+comment_single=\\
 # multiline comments
 comment_open=(
 comment_close= )
@@ -45,3 +45,8 @@ comment_use_indent=true
 
 # context action command (please see Geany's main documentation for details)
 context_action_cmd=
+
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=1

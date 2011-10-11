@@ -15,6 +15,7 @@ preprocessor.symbol.$(file.patterns.cpp)=#
 preprocessor.start.$(file.patterns.cpp)=if
 preprocessor.middle.$(file.patterns.cpp)=else elif
 preprocessor.end.$(file.patterns.cpp)=endif
+lexer.cpp.triplequoted.strings=1
 
 [settings]
 lexer_filetype=C
@@ -41,6 +42,11 @@ comment_close=*/
 
 # context action command (please see Geany's main documentation for details)
 #context_action_cmd=
+
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=1
 
 [build_settings]
 # %f will be replaced by the complete filename

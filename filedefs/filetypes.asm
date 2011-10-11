@@ -24,6 +24,7 @@ instructions=hlt lad spi add sub mul div jmp jez jgz jlz swap jsr ret pushac pop
 registers=
 directives=org list nolist page equivalent word text
 
+
 [settings]
 # default extension used when saving files
 extension=asm
@@ -47,6 +48,11 @@ comment_use_indent=true
 
 # context action command (please see Geany's main documentation for details)
 context_action_cmd=
+
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=1
 
 [build_settings]
 # %f will be replaced by the complete filename

@@ -2,7 +2,7 @@
 [styling=C]
 
 [keywords]
-primary=abstract assert break case catch class const continue default do else extends final finally for future generic goto if implements import inner instanceof interface native new outer package private protected public rest return static super switch synchronized this throw throws transient try var volatile while true false null
+primary=abstract assert break case catch class const continue default do else enum extends final finally for future generic goto if implements import inner instanceof interface native new outer package private protected public rest return static super switch synchronized this throw throws transient try var volatile while true false null
 secondary=boolean byte char double float int long short void
 # documentation keywords for javadoc
 doccomment=author deprecated exception param return see serial serialData serialField since throws todo version
@@ -33,6 +33,10 @@ comment_use_indent=true
 # context action command (please see Geany's main documentation for details)
 context_action_cmd=
 
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=1
 
 [build_settings]
 # %f will be replaced by the complete filename
