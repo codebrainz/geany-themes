@@ -1,11 +1,11 @@
 Color Schemes for Geany
 =======================
 
-These are some color schemes for the [Geany IDE](http://geany.org) converted from other editors' color 
-schemes and some created by the Geany community.  
+These are some color schemes for the [Geany IDE](http://geany.org) converted from other editors' color
+schemes and some created by the Geany community.
 
-__Note:__ Please don't report any bugs on the Geany tracker for issues with these color schemes.  Instead use the 
-[Issues Tracker](https://github.com/codebrainz/colorschemes/issues) for the 
+__Note:__ Please don't report any bugs on the Geany tracker for issues with these color schemes.  Instead use the
+[Issues Tracker](https://github.com/codebrainz/colorschemes/issues) for the
 [colorschemes](https://github.com/codebrainz/colorschemes) repository.
 
 Installation Instructions:
@@ -24,7 +24,7 @@ Keeping up to Date:
 
 ```
 $ cd ~/.config/geany/colorschemes
-$ git pull master
+$ git pull origin master
 ```
 
 Now restart Geany and you should see the updated color schemes.
