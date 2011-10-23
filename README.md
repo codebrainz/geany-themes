@@ -5,16 +5,17 @@ These are some color schemes for the [Geany IDE](http://geany.org) converted fro
 schemes and some created by the Geany community.
 
 __Note:__ Please don't report any bugs on the Geany tracker for issues with these color schemes.  Instead use the
-[Issues Tracker](https://github.com/codebrainz/colorschemes/issues) for the
-[colorschemes](https://github.com/codebrainz/colorschemes) repository.
+[Issues Tracker](https://github.com/codebrainz/geany-themes/issues) for the
+[geany-themes](https://github.com/codebrainz/geany-themes) repository.
 
 Installation Instructions:
 --------------------------
 
 ```
-$ cd ~/.config/geany/
-$ mv colorschemes{,-backup}
-$ git clone git://github.com/codebrainz/colorschemes.git
+$ cd /home/you/some/place
+$ git clone git://github.com/codebrainz/geany-themes.git
+$ mv /home/you/.config/geany/colorschemes{,-backup}
+$ ln -s /home/you/some/place/geany-themes /home/you/.config/geany/colorschemes 
 ```
 
 Now restart Geany and you should see the color schemes under the View->Editor->Color Schemes menu.
