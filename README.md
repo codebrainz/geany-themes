@@ -1,6 +1,9 @@
 Color Schemes for Geany
 =======================
 
+__IMPORTANT:__ These themes are **only** for Geany's `master` development branch!  If you are using Geany 0.20, use
+the geany-themes `0.20` branch, if you are using Geany 0.21, use the geany-themes `0.21` branch.
+
 These are some color schemes for the [Geany IDE](http://geany.org) converted from other editors' color
 schemes and some created by the Geany community.
 
