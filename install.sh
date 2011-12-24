@@ -10,6 +10,6 @@ if test -d "colorschemes"; then
   mv colorschemes "colorschemes_${TIMESTAMP}"
 fi
 
-git clone git://github.com/codebrainz/colorschemes.git
+git clone git://github.com/codebrainz/geany-themes.git
 
 cd "${CURRENT_DIR}"
