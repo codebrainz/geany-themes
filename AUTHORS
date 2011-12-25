@@ -1,0 +1,93 @@
+AUTHORS
+=======
+
+The following is a list of people who have either authored the
+colour schemes or ported them to another editor.  Where the asterisk
+is indicated means the person who is "currently responsible" for the
+colour scheme, but otherwise getting in touch with the current
+maintainer:
+
+  Matthew Brush <matt(at)geany(dot)org>
+
+Will ultimately result in getting your questions answered or forwarded
+to the appropriate person.
+
+bespin.conf
+-----------
+  Alexandre da Silva (tm2gtksw2)
+ *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
+
+dark.conf
+---------
+  Duncan Lock <duncan.lock(at)gmail(dot)com>
+ *Matthew Brush <matt(at)geany(dot)org> (port to newer Geany)
+
+dark-fruit-salad.conf
+---------------------
+  John Gabriele <jmg3000(at)gmail(dot)com>
+ *Matthew Brush <matt(at)geany(dot)org> (port to newer Geany)
+
+fluffy.conf
+-----------
+  Osmo Salomaa <unknown email address>
+ *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
+
+gedit.conf
+----------
+  Yevgen Muntyan <muntyan(at)tamu(dot)edu>
+ *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
+
+github.conf
+-----------
+  Felipe Mesquita <fmesquitacunha(at)gmail(dot)com>
+ *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
+
+kugel.conf
+----------
+ *Thomas Martitz <thomas.martitz(at)student.htw-berlin(dot)de>
+
+oblivion2.conf
+--------------
+  Bernhard Posselt <bernhard.posselt(at)gmx(dot)at>
+ *Matthew Brush <matt(at)geany(dot)org> (port to newer Geany)
+
+railscasts2.conf
+----------------
+  Unknown Author <unknown email address>
+ *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
+
+retro.conf
+----------
+ *Matthew Brush <matt(at)geany(dot)org>
+
+slushpoppies.conf
+-----------------
+  Will Farrington <wcfarrington(at)gmail(dot)com>
+ *Matthew Brush <matt(at)geany(dot)org>
+
+tango-dark.conf
+---------------
+  Barry van Oudtshoorn <unknown email address>
+ *Matthew Brush <matt(at)geany(dot)org>
+
+tango-light.conf
+----------------
+ *Colomban Wendling <colomban(at)geany(dot)org>
+
+tinge.conf
+----------
+  Harsh J <harshj(at)gmail(dot)com>
+  Luigi Maselli <luigix(at)gmail(dot)com>
+ *Matthew Brush <matt(at)geany(dot)org>
+
+vibrant-ink.conf
+----------------
+  Jason Wilson <jason.willson(at)gmail(dot)com>
+ *Matthew Brush <matt(at)geany(dot)org>
+
+zenburn.conf
+------------
+  Unknown Author <unknown email address>
+ *Matthew Brush <matt(at)geany(dot)org>
+
+[*] Current maintainer - best to get in touch with
