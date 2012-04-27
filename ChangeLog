@@ -1,0 +1,352 @@
+2012-02-27 02:03:32 -0800 Matthew Brush 
+
+	* Update version number in Makefile (oops) (HEAD, 0.21)
+
+2012-02-27 02:01:24 -0800 Matthew Brush 
+
+	* Update attribution, copyright and license info in themes
+
+2012-02-27 01:51:59 -0800 Matthew Brush 
+
+	* Add files needed for 0.21 release (README, AUTHORS, etc)
+
+2012-02-27 01:43:04 -0800 Matthew Brush 
+
+	* Remove extra files before 0.21 release
+
+2011-10-10 20:48:40 -0700 Matthew Brush 
+
+	* Update filedefs from Geany's, mostly adding indent type setting. (origin/0.21)
+
+2011-10-10 20:47:54 -0700 Matthew Brush 
+
+	* Add files from Geany's filedefs, even though they don't have styles.
+
+2011-09-08 22:34:43 -0700 Matthew Brush 
+
+	* Merge pull request #6 from jpfleury/master
+
+2011-09-08 22:09:10 -0400 Jean-Philippe Fleury 
+
+	* Better support for Markdown on gedit color scheme.
+
+2011-09-08 22:08:26 -0400 Jean-Philippe Fleury 
+
+	* Allowing to set style for strong and emphasis on Markdown files.
+
+2011-09-08 22:07:13 -0400 Jean-Philippe Fleury 
+
+	* Allowing more string styles (added "string_3=default" and "string_4=default").
+
+2011-09-08 15:47:12 -0400 Jean-Philippe Fleury 
+
+	* gedit.conf: better support for CSS, and use of more named styles.
+
+2011-09-08 13:51:16 -0400 Jean-Philippe Fleury 
+
+	* Set Makefile identifiers to use "identifier" style instead of "keyword" style.
+
+2011-09-08 13:07:40 -0400 Jean-Philippe Fleury 
+
+	* gedit.conf: "regex" styled like "identifier_4", particularly useful for Perl, using e.g. "regex" for "array" and "hash".
+
+2011-09-08 12:41:34 -0400 Jean-Philippe Fleury 
+
+	* gedit.conf: "scalar" styled like "identifier_4".
+
+2011-09-08 11:59:56 -0400 Jean-Philippe Fleury 
+
+	* PO files: "fuzzy" styled as a comment doc keyword.
+
+2011-09-08 11:44:12 -0400 Jean-Philippe Fleury 
+
+	* PO files: differentiate keywords and double quoted strings.
+
+2011-09-07 23:46:39 -0700 Jean-Philippe Fleury 
+
+	* Improve Gedit theme to more closely match Gedit's default Classic theme.
+
+2011-08-09 19:37:46 +0200 Colomban Wendling 
+
+	* Tango Light: fix line endings
+
+2011-08-09 19:36:59 +0200 Colomban Wendling 
+
+	* Tango Light: fix "other" color
+
+2011-08-09 19:36:26 +0200 Colomban Wendling 
+
+	* Tango Light: add "verbatim" mapping
+
+2011-08-09 19:35:01 +0200 Colomban Wendling 
+
+	* Fix a typo in the LaTeX mapping breaking keywords highlighting
+
+2011-06-11 16:23:05 -0700 Matthew Brush 
+
+	* Fixup some theme errors.
+
+2011-06-11 14:01:24 -0700 Matthew Brush 
+
+	* Add screenshot for Kugel theme.
+
+2011-06-11 13:07:43 -0700 Matthew Brush 
+
+	* Make kugel.conf use first letter upper-case for theme name.
+
+2011-06-11 13:02:27 -0700 Matthew Brush 
+
+	* Update all themes to have the new scalar style used in perl and shell filedefs.
+
+2011-06-11 16:50:03 +0200 Thomas Martitz 
+
+	* Initial commit of my darkish colorscheme.
+
+2011-06-11 17:19:16 +0200 Thomas Martitz 
+
+	* Style fixes for perl and sh
+
+2011-06-11 11:59:20 -0700 Matthew Brush 
+
+	* Use C instead of C++ as the main C-type language named styles definition.
+
+2011-04-04 22:49:47 -0700 Matthew Brush 
+
+	* Fix typo in Default color scheme.
+
+2011-04-04 22:46:13 -0700 Matthew Brush 
+
+	* Add Default theme in filetypes.common.
+
+2011-04-04 21:17:23 -0700 Matthew Brush 
+
+	* Update README pointing to deprecated branch.
+
+2011-04-04 21:07:14 -0700 Matthew Brush 
+
+	* Move gedit2geany out of tree (separate project).
+
+2011-04-04 21:04:20 -0700 Matthew Brush 
+
+	* Add workaround fontconfig file for bold font alignment issues, remove obsolete 'notbold' script.
+
+2011-04-04 20:54:05 -0700 Matthew Brush 
+
+	* Make 'lint' script useful.
+
+2011-04-04 19:09:00 -0700 Matthew Brush 
+
+	* Fix tango-light workaround for reversed diff add/remove.
+
+2011-04-04 18:34:50 -0700 Matthew Brush 
+
+	* Fix reversed diff line added/removed colors (oops).
+
+2011-04-03 18:08:54 -0700 Matthew Brush 
+
+	* Update Vala keywords.
+
+2011-04-03 18:05:51 -0700 Matthew Brush 
+
+	* Add 'tripleverbatim' lexer state for Cpp lexers (should be in Geany soon).
+
+2011-04-03 17:48:28 -0700 Matthew Brush 
+
+	* Fix [styling=Foo] to use filetype names instead of filetypes extensions.
+
+2011-03-26 13:53:05 -0700 Matthew Brush 
+
+	* Fix bug in github.conf colorscheme.
+
+2011-03-26 13:44:40 -0700 Matthew Brush 
+
+	* Fixup some Markdown in README.markdown, again.
+
+2011-03-26 13:43:50 -0700 Matthew Brush 
+
+	* Fixup some Markdown in README.markdown.
+
+2011-03-26 13:42:42 -0700 Matthew Brush 
+
+	* Update more content in README.markdown.
+
+2011-03-26 13:26:53 -0700 Matthew Brush 
+
+	* Missed a part of README.markdown (oops).
+
+2011-03-26 13:25:39 -0700 Matthew Brush 
+
+	* Update main README.markdown
+
+2011-03-26 13:21:18 -0700 Matthew Brush 
+
+	* Update filedefs/README.
+
+2011-03-26 13:15:50 -0700 Matthew Brush 
+
+	* Remove files that are no longer needed.
+
+2011-03-26 13:06:56 -0700 Matthew Brush 
+
+	* Remove substitutions from filedefs and bold/italic from mappings.
+
+2011-03-26 12:33:33 -0700 Matthew Brush 
+
+	* Add space after comment_single for Forth.
+
+2011-03-26 11:35:57 -0700 Matthew Brush 
+
+	* Make use of new [styling=foo] feature.
+
+2011-03-26 11:24:32 -0700 Matthew Brush 
+
+	* Update substituted filetypes.pascal.
+
+2011-03-26 11:22:40 -0700 Matthew Brush 
+
+	* Add subtitution marker to filetypes.pascal.in
+
+2011-03-26 11:20:00 -0700 Matthew Brush 
+
+	* Update substituted filetypes.
+
+2011-03-26 11:06:45 -0700 Matthew Brush 
+
+	* Add support for new 'comment_single' key.
+
+2011-03-26 10:43:05 -0700 Matthew Brush 
+
+	* Add Genie and Scala custom filetypes.
+
+2011-03-04 15:56:15 -0800 Matthew Brush 
+
+	* Add script to create a 'non bold' version of the themes.
+
+2011-03-04 15:54:48 -0800 Matthew Brush 
+
+	* Start work on a script to convert Gedit themes to Geany themes.
+
+2011-03-04 15:53:36 -0800 Matthew Brush 
+
+	* Minor tweaks to GitHub theme
+
+2011-03-04 15:52:56 -0800 Matthew Brush 
+
+	* Add Tango Light theme, created by Colomban Wendling
+
+2011-02-25 18:23:03 -0800 Matthew Brush 
+
+	* Added bespin theme and screenshot.
+
+2011-02-25 09:08:09 -0800 Matthew Brush 
+
+	* Added screenshots for new themes.
+
+2011-02-25 09:02:40 -0800 Matthew Brush 
+
+	* Added slushpoppies.conf theme.
+
+2011-02-25 08:36:41 -0800 Matthew Brush 
+
+	* Added zenburn.conf theme and started on a lint script for checking themes.
+
+2011-02-25 08:02:35 -0800 Matthew Brush 
+
+	* Minor tweak to brace_bad in railscasts2.conf.
+
+2011-02-25 07:54:06 -0800 Matthew Brush 
+
+	* Fixed up makefile mappings and railscasts2 theme (thanks b4n).
+
+2011-02-25 05:45:38 -0800 Matthew Brush 
+
+	* Added Tinge theme and added a theme_info group to each existing theme.
+
+2011-02-24 22:37:19 -0800 Matthew Brush 
+
+	* Updated the filetypes.common.in file with the 'white_space' style.
+
+2011-02-24 21:59:23 -0800 Matthew Brush 
+
+	* Added more info to README.markdown and fixed some markdown issues in it.
+
+2011-02-24 21:15:15 -0800 Matthew Brush 
+
+	* Fixed some of the markdown in README.markdown.
+
+2011-02-24 20:27:47 -0800 Matthew Brush 
+
+	* Fixed up markdown.conf a little bit but it still needs some attention.  Fixed emphasis in README.markdown.
+
+2011-02-24 20:16:06 -0800 Matthew Brush 
+
+	* Minor changes to README.markdown
+
+2011-02-24 20:14:39 -0800 Matthew Brush 
+
+	* Fixed up README.markdown a little bit more.
+
+2011-02-24 20:14:02 -0800 Matthew Brush 
+
+	* Fixed up README.markdown a little bit.
+
+2011-02-24 20:11:02 -0800 Matthew Brush 
+
+	* Used wrong extension for README and forgot to add directories noted in last commit message.
+
+2011-02-24 20:09:00 -0800 Matthew Brush 
+
+	* Added substitue script, install script, templates dir, mappings dir and added/updated documentation.
+
+2011-02-24 16:12:20 -0800 Matthew Brush 
+
+	* Fixed a missed substitution in filetypes.makefile
+
+2011-02-24 07:58:42 -0800 Matthew Brush 
+
+	* Fixed some bad hex numbers
+
+2011-02-24 07:46:21 -0800 Matthew Brush 
+
+	* Updated dark schemes to use white_space and set colors for it
+
+2011-02-24 07:35:17 -0800 Matthew Brush 
+
+	* Addded new style for white_space and updated themes with light background so far.
+
+2011-02-23 20:11:53 -0800 Matthew Brush 
+
+	* Update retro theme to use a mono color scheme and added screenshots of all themes to date
+
+2011-02-23 19:21:17 -0800 Matthew Brush 
+
+	* Updated README for 'keeping up to date'
+
+2011-02-23 18:59:08 -0800 Matthew Brush 
+
+	* Fixed some more typos reported by geany -v
+
+2011-02-23 18:49:56 -0800 Matthew Brush 
+
+	* Fixed a typo in GitHub theme
+
+2011-02-23 18:42:20 -0800 Matthew Brush 
+
+	* Updated README for keeping up to date section.
+
+2011-02-23 18:38:44 -0800 Matthew Brush 
+
+	* Fixed current_line bug in themes, updated README
+
+2011-02-23 17:49:31 -0800 Matthew Brush 
+
+	* Added port of original alt.conf file.
+
+2011-02-23 17:41:38 -0800 Matthew Brush 
+
+	* Added the rest of the themes from the Geany Extras web page.
+
+2011-02-23 16:06:00 -0800 Matthew Brush 
+
+	* Initial commit
+
