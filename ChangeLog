@@ -1,22 +1,82 @@
-2012-02-27 02:03:32 -0800 Matthew Brush 
+2012-04-30 10:00:17 +1000 Sean Flanigan 
 
-	* Update version number in Makefile (oops) (HEAD, 0.21)
+	* Back-port Solarized themes to Geany 0.21 (from f0116aae) (HEAD, seanf/solarized-0.21, 0.21)
 
-2012-02-27 02:01:24 -0800 Matthew Brush 
+2012-04-26 21:17:56 -0700 Matthew Brush 
 
-	* Update attribution, copyright and license info in themes
+	* Backport to Geany 0.21 from release tarball
 
-2012-02-27 01:51:59 -0800 Matthew Brush 
+2012-03-27 20:30:34 -0700 Harold Aling 
 
-	* Add files needed for 0.21 release (README, AUTHORS, etc)
+	* Update the `dark.conf` color scheme to more closely match the original (origin/master, origin/HEAD)
 
-2012-02-27 01:43:04 -0800 Matthew Brush 
+2012-02-27 03:18:50 -0800 Matthew Brush 
 
-	* Remove extra files before 0.21 release
+	* Re-organize project to be more suitable for releases
+
+2012-01-04 01:50:18 -0800 Matthew Brush 
+
+	* Add license comment to retro.conf
+
+2011-12-26 04:21:44 -0800 Matthew Brush 
+
+	* Fix some Solarized colors (oops)
+
+2011-12-25 17:11:43 -0800 Matthew Brush 
+
+	* Add screenshots from 0.20 branch and add two for new Solarized themes
+
+2011-12-25 16:52:30 -0800 Matthew Brush 
+
+	* Fix up Solarized themes
+
+2011-12-11 19:34:41 -0600 Joshua Hoff 
+
+	* Add WIP Solarized light and dark themes
+
+2011-12-25 01:46:39 -0800 Matthew Brush 
+
+	* Update version for `kugel.conf` (oops)
+
+2011-12-25 01:34:57 -0800 Matthew Brush 
+
+	* Add AUTHORS and proper license in each color scheme (where possible)
+
+2011-12-24 23:09:12 -0800 Matthew Brush 
+
+	* Add BSD license comment to `kugel.conf` color scheme
+
+2011-12-24 23:01:50 -0800 Matthew Brush 
+
+	* Add make file as an alternate way to install
+
+2011-12-24 14:39:18 -0800 Matthew Brush 
+
+	* Fix repository path in install script
+
+2011-10-23 13:16:34 -0700 Matthew Brush 
+
+	* Add note about branches/versions to README.md
+
+2011-10-23 02:51:31 -0700 Matthew Brush 
+
+	* Fix README.md for new (old) repository location
+
+2011-10-14 01:32:56 -0700 Matthew Brush 
+
+	* Add install and update script and fix README.md
+
+2011-10-14 00:51:04 -0700 Matthew Brush 
+
+	* Update content in the README.md file
+
+2011-10-14 00:25:49 -0700 Matthew Brush 
+
+	* Remove all the files except the color schemes and README.
 
 2011-10-10 20:48:40 -0700 Matthew Brush 
 
-	* Update filedefs from Geany's, mostly adding indent type setting. (origin/0.21)
+	* Update filedefs from Geany's, mostly adding indent type setting.
 
 2011-10-10 20:47:54 -0700 Matthew Brush 
 
