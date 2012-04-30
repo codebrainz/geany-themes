@@ -65,6 +65,18 @@ slushpoppies.conf
   Will Farrington <wcfarrington(at)gmail(dot)com>
  *Matthew Brush <matt(at)geany(dot)org>
 
+solarized-dark.conf
+-------------------
+  Ethan Schoonover <es(at)ethanschoonover(dot)com>
+  Joshua Hoff <https://github.com/joshuarh>
+ *Matthew Brush <matt(at)geany(dot)org>
+
+solarized-light.conf
+--------------------
+  Ethan Schoonover <es(at)ethanschoonover(dot)com>
+  Joshua Hoff <https://github.com/joshuarh>
+ *Matthew Brush <matt(at)geany(dot)org>
+
 tango-dark.conf
 ---------------
   Barry van Oudtshoorn <unknown email address>
