@@ -1,0 +1,119 @@
+{
+  "repos": {
+    "default": {
+      "src": "https://raw.github.com/codebrainz/geany-themes/master/colorschemes",
+      "screens": "https://github.com/codebrainz/geany-themes/raw/master/screenshots"
+    }
+  },
+  "themes": {
+    "bespin": {
+      "name": "Bespin",
+      "desc": "A port of the Bespin theme.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "dark-fruit-salad": {
+      "name": "Dark Fruit Salad",
+      "desc": "Low contrast theme ported from the set_geany_colors utility",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "dark": {
+      "name": "Dark",
+      "desc": "Dark syntax colouring theme",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "fluffy": {
+      "name": "Fluffy",
+      "desc": "Port of the Fluffy theme from gedit-themes.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "gedit": {
+      "name": "Gedit",
+      "desc": "A port of Gedit's default theme.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "github": {
+      "name": "GitHub",
+      "desc": "Similar to GitHub.com's highlighting colors.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "kugel": {
+      "name": "Kugel",
+      "desc": "A dark, but not too dark with focus to be comfortable to the eyes.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "oblivion2": {
+      "name": "Oblivion 2",
+      "desc": "Based on the Gedit color scheme Oblivion and the Dark Color Scheme with rearranged colors.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "railcasts2": {
+      "name": "Railcasts 2",
+      "desc": "A port of railscasts2 from gedit-themes.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "retro": {
+      "name": "Retro",
+      "desc": "Inspired by old green screen terminals.",
+      "repos": ["default"],
+      "version": "0.01"
+    },
+    "slushpoppies": {
+      "name": "Slush and Poppies",
+      "desc": "A port of Slush and Poppies from gedit-themes.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "solarized-dark": {
+      "name": "Solarized (dark)",
+      "desc": "Dark Solarized theme for Geany",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "solarized-light": {
+      "name": "Solarized (light)",
+      "desc": "Light Solarized theme for Geany",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "tango-dark": {
+      "name": "Tango",
+      "desc": "Loosely based on the Dark theme, but Tangofied.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "tango-light": {
+      "name": "Tango Light",
+      "desc": "A light theme using Tango colors.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "tinge": {
+      "name": "Tinge",
+      "desc": "A tinge more tanginess",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "vibrant-ink": {
+      "name": "Vibrant",
+      "desc": "Vibrant Ink Theme for Geany",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
+    "zenburn": {
+      "name": "Zenburn",
+      "desc": "A port of Zenburn from gedit-themes.",
+      "repos": ["default"],
+      "version": "1.22.0"
+    }
+  }
+}
+

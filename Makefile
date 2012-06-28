@@ -27,6 +27,12 @@ uninstall:
 	# safety in case there's other stuff in there.
 	rm -f $(UNINSTALL_THEMES)
 
+indices:
+	make -C scripts indices
+
+clean:
+	make -C scripts clean
+
 ChangeLog:
 	git --no-pager log --format="%ai %aN %n%n%x09* %s%n" > ChangeLog
 
@@ -37,4 +43,4 @@ dist: $(THEMES) README.md Makefile ChangeLog AUTHORS COPYING
 	tar -cjf $(ARCHIVE_NAME) $(ARCHIVE_TEMP_DIR)/
 	rm -rf $(ARCHIVE_TEMP_DIR) ChangeLog
 
-.PHONY: all install uninstall dist ChangeLog
+.PHONY: all install uninstall dist ChangeLog index clean
