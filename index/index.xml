@@ -63,6 +63,14 @@
       </repos>
       <version>1.22.0</version>
     </theme>
+    <theme id="mc">
+      <name>Ralesk's MC</name>
+      <desc>Midnight Commander-like scheme</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.1</version>
+    </theme>
     <theme id="oblivion2">
       <name>Oblivion 2</name>
       <desc>Based on the Gedit color scheme Oblivion and the Dark Color Scheme with rearranged colors.</desc>
