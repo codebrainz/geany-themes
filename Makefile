@@ -28,12 +28,12 @@ uninstall:
 	rm -f $(UNINSTALL_THEMES)
 
 ChangeLog:
-	git --no-pager log --format="%ai %aN %n%n%x09* %s%d%n" > ChangeLog
+	git --no-pager log --format="%ai %aN %n%n%x09* %s%n" > ChangeLog
 
-dist: $(THEMES) README Makefile ChangeLog AUTHORS COPYING
+dist: $(THEMES) README.md Makefile ChangeLog AUTHORS COPYING
 	mkdir -p geany-themes-$(THEMES_VERSION)/colorschemes/
 	cp colorschemes/*.conf $(ARCHIVE_TEMP_DIR)/colorschemes/
-	cp AUTHORS COPYING README ChangeLog $(ARCHIVE_TEMP_DIR)/
+	cp AUTHORS COPYING README.md ChangeLog $(ARCHIVE_TEMP_DIR)/
 	tar -cjf $(ARCHIVE_NAME) $(ARCHIVE_TEMP_DIR)/
 	rm -rf $(ARCHIVE_TEMP_DIR) ChangeLog
 
