@@ -33,6 +33,9 @@ indices:
 colorsnormal:
 	python scripts/colornorm.py $(THEMES)
 
+usedefaults:
+	python scripts/defaultify.py $(THEMES)
+
 clean:
 	make -C scripts clean
 
