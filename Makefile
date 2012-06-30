@@ -30,6 +30,9 @@ uninstall:
 indices:
 	make -C scripts indices
 
+colorsnormal:
+	python scripts/colornorm.py $(THEMES)
+
 clean:
 	make -C scripts clean
 
