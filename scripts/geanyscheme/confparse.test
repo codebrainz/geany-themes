@@ -1,0 +1,145 @@
+Examples and Test file for the ``confparse`` module
+===================================================
+
+The demo file used in this examples/test looks like this:
+
+  [foo]
+  bar=baz
+  mar=maz
+
+  [bloo]
+  blar=blaz
+
+First assume there's a demo config file on disk:
+
+    >>> testconf = '[foo]\nbar=baz\nmar=maz\n\n[bloo]\nblar=blaz\n\n'
+    >>> open('testing___confparse.conf', 'w').write(testconf)
+
+To use the ConfParse class, import it as such:
+
+    >>> from confparse import ConfParse
+
+To create ConfParser and parse a file:
+
+    >>> conf = ConfParse('testing___confparse.conf')
+
+The initialization function must take a filename as an argument, so this
+is wrong:
+
+    >>> conf = ConfParse()
+    Traceback (most recent call last):
+      ...
+    TypeError: __init__() takes exactly 2 arguments (1 given)
+
+To check for the existence of sections and options, do it like this:
+
+    >>> conf.has_section('foo')
+    True
+    >>> conf.has_section('does-not-exist')
+    False
+    >>> conf.has_option('foo', 'bar')
+    True
+    >>> conf.has_option('foo', 'does-not-exist')
+    False
+    >>> conf.has_option('no-such-group', 'bar')
+    False
+
+You can get a list of sections and options in a section like this:
+
+    >>> conf.sections()
+    ['foo', 'bloo']
+    >>> conf.options('foo')
+    ['bar', 'mar']
+
+If the section doesn't exist, calling `options` will return an emtpy list:
+
+    >>> conf.options('does-not-exist')
+    []
+
+You can add an empty section like this:
+
+    >>> conf.add_section('new-section')
+    >>> conf.has_section('new-section')
+    True
+
+You can add a new option like this:
+
+    >>> conf.add_option('new-section', 'new-option')
+    >>> conf.has_option('new-section', 'new-option')
+    True
+
+The new option's value will be an empty string:
+
+    >>> conf.get('new-section', 'new-option')
+    ''
+
+Note that if this the section doesn't exist for ``add_option`` it is added:
+
+    >>> conf.add_option('another-new-section', 'new-option')
+    >>> conf.has_section('another-new-section')
+    True
+
+You can get and set the value of an option like this:
+
+    >>> conf.set('foo', 'mar', 'new-value')
+    >>> conf.get('foo', 'mar')
+    'new-value'
+
+If you specify a section or option with ``set`` that doesn't exist, they
+will be added, for example:
+
+    >>> conf.has_section('brand-new-section')
+    False
+    >>> conf.set('brand-new-section', 'brand-new-option', 'brand-new-value')
+    >>> conf.has_section('brand-new-section')
+    True
+    >>> conf.get('brand-new-section', 'brand-new-option')
+    'brand-new-value'
+
+You can get a dictionary of the conf file like this (code mangled for tests):
+
+    >>> open('testing___confparse.conf', 'w').write('[foo]\nbar=baz')
+    >>> conf = ConfParse('testing___confparse.conf')
+    >>> conf.to_dict()
+    {'foo': {'bar': 'baz'}}
+
+You can get the raw text of the conf file using the ``__str__`` method:
+
+    >>> str(conf)
+    '[foo]\nbar=baz\n'
+
+There's also a few static methods used during parsing that are generally
+not very useful externally, but none-the-less (for testing purposes):
+
+    >>> all(ConfParse.is_comment(txt) for txt in ['# foo','; foo','    # foo'])
+    True
+    >>> any(ConfParse.is_comment(txt) for txt in ['foo','[foo]'])
+    False
+    >>> all(ConfParse.is_group(txt) for txt in ['[foo]', '  [foo]'])
+    True
+    >>> any(ConfParse.is_group(txt) for txt in ['foo','[foo','foo]'])
+    False
+    >>> all(ConfParse.is_key_value(txt) for txt in ['key=value', 'key = value', 'key='])
+    True
+    >>> any(ConfParse.is_key_value(txt) for txt in ['key', 'foo bar=baz', '=bar'])
+    False
+
+To re-save the conf file with the same name:
+
+    >>> conf.set('newsect', 'newgroup', 'newval')
+    >>> conf.save()
+    >>> conf = ConfParse('testing___confparse.conf')
+    >>> conf.get('newsect', 'newgroup')
+    'newval'
+
+To save the conf file with a new file name:
+
+    >>> conf.save_as('testing___confparse2.conf')
+    >>> import os
+    >>> os.path.exists('testing___confparse2.conf')
+    True
+
+And now to clean up some files from the tests/examples:
+
+    >>> os.unlink('testing___confparse.conf')
+    >>> os.unlink('testing___confparse2.conf')

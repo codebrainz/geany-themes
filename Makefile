@@ -27,14 +27,26 @@ uninstall:
 	# safety in case there's other stuff in there.
 	rm -f $(UNINSTALL_THEMES)
 
-ChangeLog:
-	git --no-pager log --format="%ai %aN %n%n%x09* %s%d%n" > ChangeLog
+indices:
+	make -C scripts indices
 
-dist: $(THEMES) README Makefile ChangeLog AUTHORS COPYING
+colorsnormal:
+	python scripts/colornorm.py $(THEMES)
+
+usedefaults:
+	python scripts/defaultify.py $(THEMES)
+
+clean:
+	make -C scripts clean
+
+ChangeLog:
+	git --no-pager log --format="%ai %aN %n%n%x09* %s%n" > ChangeLog
+
+dist: $(THEMES) README.md Makefile ChangeLog AUTHORS COPYING
 	mkdir -p geany-themes-$(THEMES_VERSION)/colorschemes/
 	cp colorschemes/*.conf $(ARCHIVE_TEMP_DIR)/colorschemes/
-	cp AUTHORS COPYING README ChangeLog $(ARCHIVE_TEMP_DIR)/
+	cp AUTHORS COPYING README.md ChangeLog $(ARCHIVE_TEMP_DIR)/
 	tar -cjf $(ARCHIVE_NAME) $(ARCHIVE_TEMP_DIR)/
 	rm -rf $(ARCHIVE_TEMP_DIR) ChangeLog
 
-.PHONY: all install uninstall dist ChangeLog
+.PHONY: all install uninstall dist ChangeLog index clean

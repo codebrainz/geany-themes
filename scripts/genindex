@@ -1,0 +1,109 @@
+#!/usr/bin/env python
+
+"""
+Generates the index files in the `index` directory. Determines format based
+on the input file's extension:
+  'conf.in' -> ../index/index.conf
+  'xml.in'  -> ../index/index.xml
+  'json.in' -> ../index/index.json
+
+Usage: genindex index.ext.in COLORSCHEME_FILES...
+"""
+
+import os
+import sys
+try:
+  from configparser import SafeConfigParser
+except ImportError:
+  from ConfigParser import SafeConfigParser
+
+def usage(f):
+  f.write("Usage: %s TEMPLATE COLOR_SCHEMES...\n" % os.path.basename(__file__))
+
+def gen_conf_code(title, name, desc, repos, vers):
+  code = '[%s]\n' % title
+  code += 'name=%s\n' % name
+  code += 'desc=%s\n' % desc
+  code += 'repos=%s\n' % ';'.join(repos)
+  code += 'version=%s\n\n' % vers
+  return code
+
+def gen_xml_code(title, name, desc, repos, vers):
+  code  = '\n    <theme id="%s">\n' % title
+  code += '      <name>%s</name>\n' % name
+  code += '      <desc>%s</desc>\n' % desc
+  code += '      <repos>\n'
+  for repo in repos:
+    code += '        <repo>%s</repo>\n' % repo
+  code += '      </repos>\n'
+  code += '      <version>%s</version>\n' % vers
+  code += '    </theme>'
+  return code
+
+def gen_json_code(title, name, desc, repos, vers):
+  code  = '    "%s": {\n' % title
+  code += '      "name": "%s",\n' % name
+  code += '      "desc": "%s",\n' % desc
+  code += '      "repos": [%s],\n' % ','.join(['"%s"'%r for r in repos])
+  code += '      "version": "%s"\n' % vers
+  code += '    },\n'
+  return code
+
+CODE_MAP = {
+  "conf": gen_conf_code,
+  "xml": gen_xml_code,
+  "json": gen_json_code,
+}
+
+def main(args):
+  if len(args) < 2:
+    sys.stderr.write("error: no template file specified\n")
+    usage(sys.stderr)
+    return 1
+  mode = ''
+  tmpl_file = args[1]
+  if tmpl_file.endswith('.conf.in'):
+    mode = 'conf'
+  elif tmpl_file.endswith('.xml.in'):
+    mode = 'xml'
+  elif tmpl_file.endswith('.json.in'):
+    mode = 'json'
+  else:
+    sys.stderr.write('error: unknown template format for "%s"' % tmpl_file)
+    return 2
+  if len(args) < 3:
+    sys.stderr.write("error: no color scheme(s) specified\n")
+    usage(sys.stderr)
+    return 3
+  code = ''
+  cs_files = args[2:]
+  for cs_file in cs_files:
+    conf = SafeConfigParser()
+    conf.read(cs_file)
+    if conf.has_section('theme_info'):
+      fn = os.path.basename(cs_file)
+      title = fn
+      if fn.endswith(".conf"):
+        title = fn[:-5]
+      if conf.has_option('theme_info', 'name'):
+        name = conf.get('theme_info', 'name')
+      else:
+        name = title
+      if conf.has_option('theme_info', 'description'):
+        desc = conf.get('theme_info', 'description')
+      else:
+        desc = ''
+      repos = ['default']
+      if conf.has_option('theme_info', 'version'):
+        vers = conf.get('theme_info', 'version')
+      else:
+        vers = str(int(os.stat(cs_file).st_mtime))
+      code += CODE_MAP[mode](title, name, desc, repos, vers)
+  if mode == 'json' and code.endswith(',\n'):
+    code = code[:-2] + '\n'
+  tmpl_text = open(tmpl_file).read()
+  tmpl_text = tmpl_text.replace("##themes##", code)
+  print(tmpl_text)
+  return 0
+
+if __name__ == "__main__": sys.exit(main(sys.argv))

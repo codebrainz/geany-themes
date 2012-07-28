@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is auto-generated, do not edit! -->
+<index>
+  <repos>
+    <repo name="default"
+      href="https://raw.github.com/codebrainz/geany-themes/master/colorschemes"
+      screens="https://github.com/codebrainz/geany-themes/raw/master/screenshots"/>
+  </repos>
+  <themes>
+    <theme id="bespin">
+      <name>Bespin</name>
+      <desc>A port of the Bespin theme.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="dark-fruit-salad">
+      <name>Dark Fruit Salad</name>
+      <desc>Low contrast theme ported from the set_geany_colors utility</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="dark">
+      <name>Dark</name>
+      <desc>Dark syntax colouring theme</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="fluffy">
+      <name>Fluffy</name>
+      <desc>Port of the Fluffy theme from gedit-themes.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="gedit">
+      <name>Gedit</name>
+      <desc>A port of Gedit's default theme.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="github">
+      <name>GitHub</name>
+      <desc>Similar to GitHub.com's highlighting colors.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="kugel">
+      <name>Kugel</name>
+      <desc>A dark, but not too dark with focus to be comfortable to the eyes.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="mc">
+      <name>Ralesk's MC</name>
+      <desc>Midnight Commander-like scheme</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.1</version>
+    </theme>
+    <theme id="oblivion2">
+      <name>Oblivion 2</name>
+      <desc>Based on the Gedit color scheme Oblivion and the Dark Color Scheme with rearranged colors.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="railcasts2">
+      <name>Railcasts 2</name>
+      <desc>A port of railscasts2 from gedit-themes.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="retro">
+      <name>Retro</name>
+      <desc>Inspired by old green screen terminals.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>0.01</version>
+    </theme>
+    <theme id="slushpoppies">
+      <name>Slush and Poppies</name>
+      <desc>A port of Slush and Poppies from gedit-themes.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="solarized-dark">
+      <name>Solarized (dark)</name>
+      <desc>Dark Solarized theme for Geany</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="solarized-light">
+      <name>Solarized (light)</name>
+      <desc>Light Solarized theme for Geany</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="tango-dark">
+      <name>Tango</name>
+      <desc>Loosely based on the Dark theme, but Tangofied.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="tango-light">
+      <name>Tango Light</name>
+      <desc>A light theme using Tango colors.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="tinge">
+      <name>Tinge</name>
+      <desc>A tinge more tanginess</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="vibrant-ink">
+      <name>Vibrant</name>
+      <desc>Vibrant Ink Theme for Geany</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="zenburn">
+      <name>Zenburn</name>
+      <desc>A port of Zenburn from gedit-themes.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+  </themes>
+</index>
+

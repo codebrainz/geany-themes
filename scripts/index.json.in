@@ -1,0 +1,10 @@
+{
+  "repos": {
+    "default": {
+      "src": "https://raw.github.com/codebrainz/geany-themes/master/colorschemes",
+      "screens": "https://github.com/codebrainz/geany-themes/raw/master/screenshots"
+    }
+  },
+  "themes": {
+##themes##  }
+}
