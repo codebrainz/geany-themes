@@ -3,15 +3,19 @@
 
 [keywords]
 # all items must be in one line
-primary=break case catch const continue default delete do each else false finally for function get if in Infinity instanceof let NaN new null return set switch this throw true try typeof undefined var void while with yield
-secondary=Array Boolean Date Function Math Number Object String RegExp EvalError Error RangeError ReferenceError SyntaxError TypeError URIError prototype decodeURI decodeURIComponent encodeURI encodeURIComponent eval isFinite isNaN parseFloat parseInt
+primary=break case catch const class continue debugger default delete do else enum export extends finally for if implements import in instanceof interface let new package private protected public return static super switch throw try typeof while with yield false NaN null true undefined void
+secondary=function var constructor prototype
+classes=Array Boolean Date Function Math Number Object String RegExp EvalError Error RangeError ReferenceError SyntaxError TypeError URIError decodeURI decodeURIComponent encodeURI encodeURIComponent eval isFinite isNaN parseFloat parseInt console document navigator window this
 
 [settings]
+# ActionScript lexer has better syntax highlighting
+lexer_filetype=ActionScript
+
 # default extension used when saving files
 extension=js
 
 # the following characters are these which a "word" can contains, see documentation
-#wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+wordchars=$_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
 
 # single comments, like # in this file
 comment_single=//
@@ -30,11 +34,7 @@ comment_use_indent=true
 # context action command (please see Geany's main documentation for details)
 context_action_cmd=
 
-[build_settings]
-# %f will be replaced by the complete filename
-# %e will be replaced by the filename without extension
-# (use only one of it at one time)
-compiler=
-run=
-
-
+[indentation]
+#width=4
+# 0 is spaces, 1 is tabs, 2 is tab & spaces
+#type=1
