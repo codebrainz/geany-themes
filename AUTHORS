@@ -55,6 +55,10 @@ oblivion2.conf
   Bernhard Posselt <bernhard.posselt(at)gmx(dot)at>
  *Matthew Brush <matt(at)geany(dot)org> (port to newer Geany)
 
+pygments.conf
+--------------
+ *Nicolas Holvoët <contact(at)nhrx(dot)org> (port to Geany)
+
 railscasts2.conf
 ----------------
   Unknown Author <unknown email address>
