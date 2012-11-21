@@ -50,10 +50,18 @@ mc.conf
 -------
  *Henrik Pauli <ralesk(at)drangolin(dot)net>
 
+monokai.conf
+------------
+  *Thanh Tran <trongthanh(at)gmail(dot)com>
+
 oblivion2.conf
 --------------
   Bernhard Posselt <bernhard.posselt(at)gmx(dot)at>
  *Matthew Brush <matt(at)geany(dot)org> (port to newer Geany)
+
+pygments.conf
+--------------
+ *Nicolas Holvoët <contact(at)nhrx(dot)org> (port to Geany)
 
 railscasts2.conf
 ----------------
