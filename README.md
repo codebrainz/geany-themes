@@ -29,6 +29,8 @@ Extract the tarball and copy all of the files in the `colorschemes` directory
 to your `~/.config/geany/colorschemes/` directory. Create that directory if it
 doesn't already exist.
 
+After copying the color scheme files, you will then need to tell geany which color scheme to use. To do so, open geany and select 'View > Editor > Color Schemes' and select from the list of available color schemes.
+
 Windows Installation
 --------------------
 
