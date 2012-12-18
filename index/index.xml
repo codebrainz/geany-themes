@@ -33,7 +33,7 @@
     </theme>
     <theme id="fluffy">
       <name>Fluffy</name>
-      <desc>Port of the Fluffy theme from gedit-themes.</desc>
+      <desc>A soft and downy color scheme.</desc>
       <repos>
         <repo>default</repo>
       </repos>
@@ -55,6 +55,14 @@
       </repos>
       <version>1.22.0</version>
     </theme>
+    <theme id="inkpot">
+      <name>InkPot</name>
+      <desc>Based on the vim theme of the same name.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
     <theme id="kugel">
       <name>Kugel</name>
       <desc>A dark, but not too dark with focus to be comfortable to the eyes.</desc>
@@ -71,9 +79,25 @@
       </repos>
       <version>1.22.1</version>
     </theme>
+    <theme id="monokai">
+      <name>Monokai</name>
+      <desc>It's warm, colorful and pleasing to the eyes</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.0</version>
+    </theme>
     <theme id="oblivion2">
       <name>Oblivion 2</name>
       <desc>Based on the Gedit color scheme Oblivion and the Dark Color Scheme with rearranged colors.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
+    <theme id="pygments">
+      <name>Pygments</name>
+      <desc>Default Pygments theme for Geany</desc>
       <repos>
         <repo>default</repo>
       </repos>
