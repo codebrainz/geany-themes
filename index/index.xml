@@ -81,7 +81,7 @@
     </theme>
     <theme id="metallic_bottle">
       <name>Mettalic Bottle</name>
-      <desc>White background color scheme matching GTK "Radiance" theme.</desc>
+      <desc>Bright color scheme matching GTK "Radiance" theme.</desc>
       <repos>
         <repo>default</repo>
       </repos>
