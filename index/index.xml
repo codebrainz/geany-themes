@@ -79,6 +79,14 @@
       </repos>
       <version>1.22.1</version>
     </theme>
+    <theme id="metallic_bottle">
+      <name>Mettalic Bottle</name>
+      <desc>Bright color scheme matching GTK "Radiance" theme.</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
     <theme id="monokai">
       <name>Monokai</name>
       <desc>It's warm, colorful and pleasing to the eyes</desc>
