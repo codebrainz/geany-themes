@@ -42,6 +42,10 @@ github.conf
   Felipe Mesquita <fmesquitacunha(at)gmail(dot)com>
  *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
 
+inkpot.conf
+-----------
+ *Campbell Barton <ideasman42(at)gmail(dot)com>
+
 kugel.conf
 ----------
  *Thomas Martitz <thomas.martitz(at)student.htw-berlin(dot)de>
