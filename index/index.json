@@ -12,6 +12,12 @@
       "repos": ["default"],
       "version": "1.22.0"
     },
+    "black": {
+      "name": "Black Scheme",
+      "desc": "Black background, other colours",
+      "repos": ["default"],
+      "version": "1.22.0"
+    },
     "dark-fruit-salad": {
       "name": "Dark Fruit Salad",
       "desc": "Low contrast theme ported from the set_geany_colors utility",

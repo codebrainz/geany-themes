@@ -17,6 +17,10 @@ bespin.conf
   Alexandre da Silva (tm2gtksw2)
  *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
 
+black.conf
+----------
+ *Paul Lenton (EckoZero) <lentonp(at)gmail(dot)com>
+
 dark.conf
 ---------
   Duncan Lock <duncan.lock(at)gmail(dot)com>

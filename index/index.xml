@@ -15,6 +15,14 @@
       </repos>
       <version>1.22.0</version>
     </theme>
+    <theme id="black">
+      <name>Black Scheme</name>
+      <desc>Black background, other colours</desc>
+      <repos>
+        <repo>default</repo>
+      </repos>
+      <version>1.22.0</version>
+    </theme>
     <theme id="dark-fruit-salad">
       <name>Dark Fruit Salad</name>
       <desc>Low contrast theme ported from the set_geany_colors utility</desc>
