@@ -12,7 +12,7 @@ ARCHIVE_TEMP_DIR = geany-themes-$(THEMES_VERSION)
 
 # dummy rule to handle default case, doesn't do anything useful
 all:
-	@echo "Nothing to do, use \`make install' instead."
+	@echo "Nothing to do, use \`make help' for info."
 
 install:
 	mkdir -p $(COLORSCHEME_DIR)
@@ -45,4 +45,29 @@ dist: $(THEMES) README.md Makefile ChangeLog AUTHORS COPYING
 	tar -cjf $(ARCHIVE_NAME) $(ARCHIVE_TEMP_DIR)/
 	rm -rf $(ARCHIVE_TEMP_DIR) ChangeLog
 
-.PHONY: all install uninstall dist ChangeLog index clean
+help:
+	@echo "Geany-Themes Makefile Help"
+	@echo "=========================="
+	@echo ""
+	@echo "  This is a little helper Makefile for managing the Geany-Themes "
+	@echo "  source tree. Most users will at most want to use the "
+	@echo "  \`make install' command or simply copy the files into the "
+	@echo "  \`$(HOME)/.config/geany/colorschemes' directory."
+	@echo ""
+	@echo "Makefile Commands:"
+	@echo "------------------"
+	@echo "  make install - Installs all color scheme .conf files"
+	@echo "  make uninstall - Uninstall tracked color scheme files"
+	@echo "  make index - Regenerate the index/index.json file"
+	@echo "  make dist - Create a .tar.bz2 package for release"
+	@echo "  make ChangeLog - Update the ChangeLog file from Git log"
+	@echo ""
+	@echo "Experimental commands:"
+	@echo "----------------------"
+	@echo "  make colorsnormal - Normalize colour notation in schemes"
+	@echo "  make defaultify - Add default values in the schemes"
+	@echo ""
+	@echo "For more up to date information, visit:"
+	@echo "  https://github.com/geany/geany-themes"
+
+.PHONY: all install uninstall dist ChangeLog index clean help
