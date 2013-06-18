@@ -27,17 +27,17 @@ uninstall:
 	# safety in case there's other stuff in there.
 	rm -f $(UNINSTALL_THEMES)
 
-indices:
-	make -C scripts indices
+index:
+	make -C index
+
+clean:
+	make -C index clean
 
 colorsnormal:
 	python scripts/colornorm.py $(THEMES)
 
 usedefaults:
 	python scripts/defaultify.py $(THEMES)
-
-clean:
-	make -C scripts clean
 
 ChangeLog:
 	git --no-pager log --format="%ai %aN %n%n%x09* %s%n" > ChangeLog
