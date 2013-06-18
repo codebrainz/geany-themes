@@ -10,9 +10,7 @@ MISMATCH_MESSAGE = Warning: Possible wrong version of Geany installed
 ARCHIVE_NAME     = geany-themes-$(THEMES_VERSION).tar.bz2
 ARCHIVE_TEMP_DIR = geany-themes-$(THEMES_VERSION)
 
-# dummy rule to handle default case, doesn't do anything useful
-all:
-	@echo "Nothing to do, use \`make help' for info."
+all: autobump index
 
 install:
 	mkdir -p $(COLORSCHEME_DIR)
@@ -23,8 +21,11 @@ uninstall:
 	# safety in case there's other stuff in there.
 	rm -f $(UNINSTALL_THEMES)
 
-index:
+index: scripts/versions.log
 	make -C index
+
+autobump: $(THEMES)
+	python scripts/autobump.py
 
 clean:
 	make -C index clean
@@ -59,6 +60,7 @@ help:
 	@echo "  make install - Installs all color scheme .conf files"
 	@echo "  make uninstall - Uninstall tracked color scheme files"
 	@echo "  make index - Regenerate the index/index.json file"
+	@echo "  make autobump - Update scheme versions on change"
 	@echo "  make dist - Create a .tar.bz2 package for release"
 	@echo "  make ChangeLog - Update the ChangeLog file from Git log"
 	@echo ""
@@ -70,4 +72,4 @@ help:
 	@echo "For more up to date information, visit:"
 	@echo "  https://github.com/geany/geany-themes"
 
-.PHONY: all install uninstall dist ChangeLog index clean help
+.PHONY: all install uninstall dist ChangeLog index autobump clean help
