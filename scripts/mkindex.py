@@ -73,15 +73,14 @@ def create_index(themes_dir, screenshot_dir='screenshots'):
         scheme_name = '.'.join(os.path.basename(conf_file).split('.')[:-1])
 
         try:
-            version = get_option(cp, 'theme_info', 'version', '0.0.0').split('.')
-            version = list(version + (['0']*3))[0:3]
-        except IndexError, TypeError:
-            version = ['0']*3
+            version = int(get_option(cp, 'theme_info', 'version', '0'))
+        except:
+            version = '0'
 
         data[scheme_name] = {
             'name': get_option(cp, 'theme_info', 'name', 'Untitled'),
             'description': get_option(cp, 'theme_info', 'description', ''),
-            'version': '.'.join(version),
+            'version': version,
             'author': get_option(cp, 'theme_info', 'author', 'Unknown Author'),
             'screenshot': '%s%s.png' % (SCREENSHOT_BASE, scheme_name),
             'colorscheme': '%s%s.conf' % (SCHEMES_BASE, scheme_name),

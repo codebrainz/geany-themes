@@ -69,12 +69,3 @@ icon that is 64 pixels wide and tall.
 This field contains a whole number that is incremented each time the
 theme is changed. You can compare this against installed color scheme
 versions to see if an update is available.
-
-<s>The version number is a sequence of one or more digits, optionally
-separated by periods/decimal points. The string will always contain
-only 0-9 and optional decimal points in between any of the numbers,
-for example "1.2.3", "123", "12.3", but never "..2", ".2.", "....", etc.
-The result of splitting the string on the decimal point and converting
-each component into an integer will always succeed and the string will
-never be empty. One or more of the numbers in the string will move in
-the upward direction when the colour scheme is modified.</s>
