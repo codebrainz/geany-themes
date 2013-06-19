@@ -34,12 +34,20 @@ This field will never be empty.
 A short description of the theme or an empty string. The string is meant
 to be displayed to human beings.
 
-#### md5hash
+#### scheme_hash
 
 An MD5 hash of the colour scheme `.conf` file from the last time it was
 changed. This value can be used to check if a local scheme needs updating
 and/or to verify the integrity of the file that could be downloaded using
 the `colorscheme` URL field. This field will never be empty.
+
+#### screen_hash
+
+An MD5 hash of the colour scheme preview/screenshot image the last time
+it was changed. This value can be used to check if a cached screenshot
+needs to be updated locally and/or to verify the integrity of a the
+downloaded screenshot. This field may be empty if a screenshot does
+not exist.
 
 #### name
 

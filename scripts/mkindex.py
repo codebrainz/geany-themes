@@ -76,6 +76,12 @@ def create_index(themes_dir, screenshot_dir='screenshots'):
             version = int(get_option(cp, 'theme_info', 'version', '0'))
         except:
             version = '0'
+        
+        png_file = os.path.join(screenshot_dir, scheme_name + '.png')
+        if os.path.isfile(png_file):
+          png_hash = hashlib.md5(open(png_file).read()).hexdigest()
+        else:
+          png_hash = ''
 
         data[scheme_name] = {
             'name': get_option(cp, 'theme_info', 'name', 'Untitled'),
@@ -84,8 +90,9 @@ def create_index(themes_dir, screenshot_dir='screenshots'):
             'author': get_option(cp, 'theme_info', 'author', 'Unknown Author'),
             'screenshot': '%s%s.png' % (SCREENSHOT_BASE, scheme_name),
             'colorscheme': '%s%s.conf' % (SCHEMES_BASE, scheme_name),
-            'md5hash': hashlib.md5(open(conf_file).read()).hexdigest(),
             'thumbnail': generate_thumbnail(conf_file, screenshot_dir),
+            'screen_hash': png_hash,
+            'scheme_hash': hashlib.md5(open(conf_file).read()).hexdigest(),
         }
 
     # json.dumps() leaves trailing whitespace on some lines, strip it off
