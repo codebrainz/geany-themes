@@ -2,6 +2,12 @@
   "bespin": {
     "author": "Alexandre da Silva (tm2gtksw2)",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/bespin.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A port of the Bespin theme.",
     "name": "Bespin",
     "scheme_hash": "9f31f38894ea334efafdaf23dd5efd90",
@@ -13,6 +19,12 @@
   "black": {
     "author": "Paul Lenton <lentonp(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/black.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Black background, other colours",
     "name": "Black Scheme",
     "scheme_hash": "5c1b49ba64467fc8e32fc02be957c1ad",
@@ -24,6 +36,12 @@
   "dark": {
     "author": "Duncan Lock <duncan.lock(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/dark.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Dark syntax colouring theme",
     "name": "Dark",
     "scheme_hash": "85503daba4aae8ca18ddc85c72fd13ec",
@@ -35,6 +53,12 @@
   "dark-fruit-salad": {
     "author": "John Gabriele <jmg3000(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/dark-fruit-salad.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Low contrast theme ported from the set_geany_colors utility",
     "name": "Dark Fruit Salad",
     "scheme_hash": "a004edb7f8617de0773940d7042fb44a",
@@ -46,6 +70,12 @@
   "fluffy": {
     "author": "Osmo Salomaa <unknown email address>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/fluffy.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A soft and downy color scheme.",
     "name": "Fluffy",
     "scheme_hash": "57459f2202e637a18bdcd77e6c274d33",
@@ -57,6 +87,12 @@
   "gedit": {
     "author": "Yevgen Muntyan <muntyan(at)tamu(dot)edu>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/gedit.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A port of Gedit's default theme.",
     "name": "Gedit",
     "scheme_hash": "d0c29df9f887a10b50a43b69340cab75",
@@ -68,6 +104,12 @@
   "github": {
     "author": "Felipe Mesquita <fmesquitacunha(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/github.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Similar to GitHub.com's highlighting colors.",
     "name": "GitHub",
     "scheme_hash": "16428bdd685917178dfab221bdad45f7",
@@ -79,6 +121,12 @@
   "inkpot": {
     "author": "Campbell Barton <ideasman42(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/inkpot.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Based on the vim theme of the same name.",
     "name": "InkPot",
     "scheme_hash": "3885db250835fadd3eb500d9e2d0f893",
@@ -90,6 +138,12 @@
   "kugel": {
     "author": "Thomas Martitz <thomas.martitz@student.htw-berlin.de>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/kugel.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A dark, but not too dark with focus to be comfortable to the eyes.",
     "name": "Kugel",
     "scheme_hash": "4384e99ce1ba41826f1e1603c032c159",
@@ -101,6 +155,12 @@
   "mc": {
     "author": "Henrik Pauli <ralesk@drangolin.net>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/mc.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Midnight Commander-like scheme",
     "name": "Ralesk's MC",
     "scheme_hash": "17d870912fc8b23b58b692bf8b09f9fc",
@@ -112,6 +172,12 @@
   "monokai": {
     "author": "Wimer Hazenberg",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/monokai.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "It's warm, colorful and pleasing to the eyes",
     "name": "Monokai",
     "scheme_hash": "534180762c398d9cad701d450ab2994d",
@@ -123,6 +189,12 @@
   "oblivion2": {
     "author": "Bernhard Posselt <bernhard.posselt(at)gmx(dot)at>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/oblivion2.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Based on the Gedit color scheme Oblivion and the Dark Color Scheme with rearranged colors.",
     "name": "Oblivion 2",
     "scheme_hash": "e670d2c4d79ab1ed0d589bf8d836b158",
@@ -134,6 +206,12 @@
   "pygments": {
     "author": "Pocoo",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/pygments.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Default Pygments theme for Geany",
     "name": "Pygments",
     "scheme_hash": "1d12c8fcd2968a0613e0b11545309bb1",
@@ -145,6 +223,12 @@
   "railcasts2": {
     "author": "Unknown Author <unknown email address>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/railcasts2.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A port of railscasts2 from gedit-themes.",
     "name": "Railcasts 2",
     "scheme_hash": "497de4d9fc708b993a9a36ca2657c1bf",
@@ -156,6 +240,12 @@
   "retro": {
     "author": "Matthew Brush",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/retro.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Inspired by old green screen terminals.",
     "name": "Retro",
     "scheme_hash": "52fdd8014c247cbfdafe6f43cc090f97",
@@ -167,6 +257,12 @@
   "slushpoppies": {
     "author": "Will Farrington <wcfarrington(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/slushpoppies.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A port of Slush and Poppies from gedit-themes.",
     "name": "Slush and Poppies",
     "scheme_hash": "4da7d390e1385b776aa37592a8395e71",
@@ -178,6 +274,12 @@
   "solarized-dark": {
     "author": "Ethan Schoonover",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/solarized-dark.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Dark Solarized theme for Geany",
     "name": "Solarized (dark)",
     "scheme_hash": "14a3c3d7e69e6884e800a5461318902e",
@@ -189,6 +291,12 @@
   "solarized-light": {
     "author": "Ethan Schoonover",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/solarized-light.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Light Solarized theme for Geany",
     "name": "Solarized (light)",
     "scheme_hash": "c2369224a2cb4347aeb91987e4b287dd",
@@ -200,6 +308,12 @@
   "tango-dark": {
     "author": "Barry van Oudtshoorn",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/tango-dark.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Loosely based on the Dark theme, but Tangofied.",
     "name": "Tango",
     "scheme_hash": "3cdeded6a344424243600e0d3fb5a4cb",
@@ -211,6 +325,12 @@
   "tango-light": {
     "author": "Colomban Wendling <lists.ban@herbesfolles.org>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/tango-light.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A light theme using Tango colors.",
     "name": "Tango Light",
     "scheme_hash": "f65320f71ad3a0a7829a5990868d59f3",
@@ -222,6 +342,12 @@
   "tinge": {
     "author": "Harsh J <harshj(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/tinge.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A tinge more tanginess",
     "name": "Tinge",
     "scheme_hash": "cfc2684e7a5fe00b784ca646518c60b0",
@@ -233,6 +359,12 @@
   "vibrant-ink": {
     "author": "Jason Wilson <jason.willson(at)gmail(dot)com>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/vibrant-ink.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "Vibrant Ink Theme for Geany",
     "name": "Vibrant",
     "scheme_hash": "494b963abce57f42048d84742ee951c0",
@@ -244,6 +376,12 @@
   "zenburn": {
     "author": "Unknown Author <unknown email address>",
     "colorscheme": "https://raw.github.com/geany/geany-themes/master/colorschemes/zenburn.conf",
+    "compat": [
+      "1.22.0",
+      "1.23.0",
+      "1.23.1",
+      "1.24.0"
+    ],
     "description": "A port of Zenburn from gedit-themes.",
     "name": "Zenburn",
     "scheme_hash": "88a7fb58e4287da8a13df539d12976ad",

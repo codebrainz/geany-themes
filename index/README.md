@@ -29,6 +29,14 @@ this URL points to is downloaded into the user's colour scheme directory,
 the colour scheme will be available in Geany for user once it's restarted.
 This field will never be empty.
 
+#### compat
+
+This field contains a list of Geany version number strings. Each version
+number represents a release (or next) version of Geany that should
+support the scheme. If this field is empty, missing or contains an
+empty list, the scheme should be assumed to work with all versions of
+Geany.
+
 #### description
 
 A short description of the theme or an empty string. The string is meant
