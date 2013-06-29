@@ -43,6 +43,13 @@ different for other Windows versions (see the Geany manual).
 colorschemes which you might have customized. Be sure to backup any files in
 those directories that you do not want over-written.
 
+Docs
+----
+
+If you want to add a theme, read the [ADDING-A-THEME.md][add-theme] file. If you
+are a package maintainer, consult the [MAKING-A-RELEASE.md][make-release] file. For
+all other cases, consult the official Geany documentation.
+
 Known Bugs
 ----------
 
@@ -77,3 +84,5 @@ Geany Themes was created and is maintained by Matthew Brush <matt@geany.org>.
 [020tar]: https://github.com/downloads/codebrainz/geany-themes/geany-themes-0.20.tar.bz2
 [021zip]: https://github.com/downloads/codebrainz/geany-themes/geany-themes-0.21.1.zip
 [021tar]: https://github.com/downloads/codebrainz/geany-themes/geany-themes-0.21.1.tar.bz2
+[add-theme]: https://github.com/geany/geany-themes/blob/master/ADDING-A-THEME.md
+[make-release]: https://github.com/geany/geany-themes/blob/master/MAKING-A-RELEASE.md
