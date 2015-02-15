@@ -150,7 +150,7 @@ Updating Meta-Data
 
 There are some meta-data files in the repository that (are not yet)
 used by some plugin to list/update geany schemes. It's simple to update
-these files by running `make indices` command in the root directory
+these files by running `make index` command in the root directory
 of the tree.
 
 If you don't have GNU make (ex. on Windows), don't worry about doing
