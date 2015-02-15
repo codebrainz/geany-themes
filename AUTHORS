@@ -21,6 +21,10 @@ black.conf
 ----------
  *Paul Lenton (EckoZero) <lentonp(at)gmail(dot)com>
 
+darcula.conf
+------------
+ *Jiri Techet <techet(at)gmail(dot)com> (port to Geany)
+
 dark.conf
 ---------
   Duncan Lock <duncan.lock(at)gmail(dot)com>
