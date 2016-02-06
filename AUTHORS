@@ -35,6 +35,11 @@ dark-fruit-salad.conf
   John Gabriele <jmg3000(at)gmail(dot)com>
  *Matthew Brush <matt(at)geany(dot)org> (port to newer Geany)
 
+dark-colors.conf
+---------------------
+  Yannis Kontochristopoulos <ikontochris(at)gmail(dot)com>
+ *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
+
 fluffy.conf
 -----------
   Osmo Salomaa <unknown email address>
