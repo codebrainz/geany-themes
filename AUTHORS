@@ -40,6 +40,10 @@ dark-colors.conf
   Yannis Kontochristopoulos <ikontochris(at)gmail(dot)com>
  *Matthew Brush <matt(at)geany(dot)org> (port to Geany)
 
+delt-dark.conf
+---------
+ *Éric Tremblay <eric (at) deimos (point) ca>
+
 fluffy.conf
 -----------
   Osmo Salomaa <unknown email address>
