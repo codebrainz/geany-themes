@@ -43,6 +43,46 @@ different for other Windows versions (see the Geany manual).
 colorschemes which you might have customized. Be sure to backup any files in
 those directories that you do not want over-written.
 
+Licenses
+--------
+
+License names as per [SPDX](https://spdx.org/licenses/)
+
+| Theme  | License |
+| ------------- | ------------- |
+| Bespin  | GPL-2.0 |
+| Black | GPL-2.0 |
+| Darcula | GPL-2.0 |
+| Dark Colors | GPL-2.0 |
+| Dark Fruit Salad | GPL-2.0 |
+| Dark | GPL-2.0 |
+| Fluffy | No License |
+| Gedit | LGPL-2.1 |
+| GitHub | GPL-2.0 |
+| Himbeere | GPL-2.0 |
+| InkPot | GPL-2.0 |
+| Kugel | BSD-2-Clause |
+| Ralesk's MC | GPL-2.0 |
+| Metallic Bottle | GPL-2.0 |
+| Monokai | No License |
+| Notepad++ | GPL-2.0 |
+| Oblivion 2 | GPL-2.0 |
+| Pygments | BSD-2-Clause |
+| Railcasts 2 | No License |
+| Retro | GPL-2.0 |
+| Sleepy Pastel | Public-Domain |
+| Slush and Poppies | GPL-2.0 |
+| Solarized Dark | MIT |
+| Solarized Light | MIT |
+| Spyder Dark | GPL-2.0 |
+| Steampunk | GPL-2.0 |
+| Tango Dark | No License |
+| Tango Light | GPL-2.0 |
+| Tinge | GPL-2.0 |
+| Ubuntu | GPL-2.0 |
+| Vibrant | GPL-2.0 |
+| Zenburn | No License |
+
 Docs
 ----
 
