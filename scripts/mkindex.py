@@ -12,7 +12,7 @@ import ConfigParser
 import hashlib
 import base64
 import StringIO
-import Image, ImageDraw, ImageOps, ImageFilter
+from PIL import Image, ImageDraw, ImageOps, ImageFilter
 
 SCREENSHOT_BASE = 'https://raw.github.com/geany/geany-themes/master/screenshots/'
 SCHEMES_BASE = 'https://raw.github.com/geany/geany-themes/master/colorschemes/'
