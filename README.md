@@ -43,6 +43,10 @@ different for other Windows versions (see the Geany manual).
 colorschemes which you might have customized. Be sure to backup any files in
 those directories that you do not want over-written.
 
+## Choosing a Color Scheme
+
+Select the `View` option from the main menu bar.  From the drop down menu select the `Change Color Scheme...` option.  This will open an interactive dialog box with the list of the color schemes you can choose from that will let you preview what a scheme will look like as you make your choice.
+
 Docs
 ----
 
