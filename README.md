@@ -20,15 +20,15 @@ up first.
 
 ### Unix-like Systems
 
-Extract the zip file, tarball or checkout with Git to a local 
-directory. In this directory you will find a sub-directory named 
-`colorschemes` which contains all of the color scheme files. Copy all of 
-these `*.conf` files into the directory named 
-`~/.config/geany/colorschemes/`, where `~` means your personal home 
-directory. Create the `~/.config/geany/colorschemes/` directory if it
+1. Extract the zip file, tarball or checkout with Git to a local 
+directory. 
+1. To install, either
+    * run `install.sh` for automatic instalation or 
+    * Copy all of the `*.conf` files from the `colorschemes`folder
+    into the `~/.config/geany/colorschemes/`.
+    Create the `~/.config/geany/colorschemes/`directory if it
 does not already exist.
-
-After copying the files you can choose a new theme by selecting
+1. Choose a new theme by selecting
 `Change Color Scheme...` from Geany's `View` menu.
 
 ### Windows
