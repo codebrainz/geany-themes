@@ -20,10 +20,10 @@ up first.
 
 ### Unix-like Systems
 
-1. Extract the zip file, tarball or checkout with Git to a local 
-directory. 
+1. Extract the zip file, tarball or checkout with Git to a local
+directory.
 1. To install, either
-    * run `install.sh` for automatic instalation or 
+    * run `install.sh` for automatic instalation or
     * Copy all of the `*.conf` files from the `colorschemes`folder
     into the `~/.config/geany/colorschemes/`.
     Create the `~/.config/geany/colorschemes/`directory if it
@@ -33,12 +33,12 @@ does not already exist.
 
 ### Windows
 
-Installing the themes on Windows is the same as with Unix-like systems 
-with the exception that the target directory will be different. With 
+Installing the themes on Windows is the same as with Unix-like systems
+with the exception that the target directory will be different. With
 Windows 7, the directory should be named
-`C:\Users\YourUserName\AppData\Roaming\geany\colorschemes`, but the 
-exact path may vary depending on your Windows configuration and/or 
-version. Refer to [the Geany Manual][man-paths] for more information on 
+`C:\Users\YourUserName\AppData\Roaming\geany\colorschemes`, but the
+exact path may vary depending on your Windows configuration and/or
+version. Refer to [the Geany Manual][man-paths] for more information on
 configuration file paths.
 
 Documentation
@@ -51,27 +51,27 @@ all other cases, consult the official Geany documentation.
 Other Themes
 ------------
 
-You can also also sometimes find bleeding edge themes which have yet to 
+You can also also sometimes find bleeding edge themes which have yet to
 be fully integrated into the repository by looking at the
 [Issues on Github][issues] labelled with the [`new-theme`][new-themes] label.
 There may also be some unofficial themes on [the wiki][wiki-themes].
 
-Be wary of old-style themes you may find in random places on the 
-Internet as they may only be compatible with old Geany versions before 
-1.22 and will likely result in grief. If the file doesn't contain a 
-section called `[theme_info]` it almost sure to be an incompatible 
+Be wary of old-style themes you may find in random places on the
+Internet as they may only be compatible with old Geany versions before
+1.22 and will likely result in grief. If the file doesn't contain a
+section called `[theme_info]` it almost sure to be an incompatible
 older theme. See below for more details.
 
 Compatibility
 -------------
 
-These color schemes are not compatible with older version of Geany 
-prior to 1.22, including its old filetypes files, which you may have 
-customized and are found in your per-user configuration folder. All 
-bets are off if you mix and match old filetypes/color schemes and the 
-color schemes here. The best way to handle it is to simple move your 
-old filetypes out of the way, copy the ones you want to customize from 
-Geany's system data folder and hand-copy over the non-`[styling]` 
+These color schemes are not compatible with older version of Geany
+prior to 1.22, including its old filetypes files, which you may have
+customized and are found in your per-user configuration folder. All
+bets are off if you mix and match old filetypes/color schemes and the
+color schemes here. The best way to handle it is to simple move your
+old filetypes out of the way, copy the ones you want to customize from
+Geany's system data folder and hand-copy over the non-`[styling]`
 groups from the old filetypes file into the new one.
 
 [geany]: http://www.geany.org
