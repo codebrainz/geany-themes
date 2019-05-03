@@ -1,6 +1,7 @@
 #!/bin/sh
-CSDIR="$HOME/.config/geany/colorschemes/"
-echo "Installing themes into \`$CSDIR'..."
+
+CSDIR="${XDG_CONFIG_HOME:-$HOME/.config}/geany/colorschemes/"
+echo "Installing themes into '$CSDIR'..."
 mkdir -p "$CSDIR"
 for SCHEME in `ls colorschemes/*.conf`
 do
