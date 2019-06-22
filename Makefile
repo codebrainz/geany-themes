@@ -10,7 +10,7 @@ MISMATCH_MESSAGE = Warning: Possible wrong version of Geany installed
 ARCHIVE_NAME     = geany-themes-$(THEMES_VERSION).tar.bz2
 ARCHIVE_TEMP_DIR = geany-themes-$(THEMES_VERSION)
 
-all: autobump index
+all: autobump index screenshots/README.md
 
 install:
 	mkdir -p $(COLORSCHEME_DIR)
@@ -26,6 +26,9 @@ index: scripts/versions.log
 
 autobump: $(THEMES)
 	python scripts/autobump.py
+
+screenshots/README.md: $(THEMES)
+	python scripts/screenshots-readme.py > $@
 
 clean:
 	make -C index clean
