@@ -1,10 +1,11 @@
 #!/bin/sh
-CSDIR="$HOME/.config/geany/colorschemes/"
-echo "Installing themes into \`$CSDIR'..."
+
+CSDIR="${XDG_CONFIG_HOME:-$HOME/.config}/geany/colorschemes/"
+echo "Installing themes into '$CSDIR'..."
 mkdir -p "$CSDIR"
-for SCHEME in `ls colorschemes/*.conf`
-do
-  BNAME=`basename "$SCHEME"`
+
+for SCHEME in colorschemes/*.conf; do
+  BNAME="${SCHEME##*/}"
   echo " => $BNAME"
   cp "$SCHEME" "$CSDIR"
 done
