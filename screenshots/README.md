@@ -68,6 +68,12 @@
 
 [The Gedit Theme Direct Download](https://raw.githubusercontent.com/geany/geany-themes/master/colorschemes/gedit.conf)
 
+### [The Geeko Dark Plus Theme](../colorschemes/geeko-dark-plus.conf)
+
+[![geeko-dark-plus.png](geeko-dark-plus.png)](geeko-dark-plus.png "The Geeko Dark Plus Theme")
+
+[The Geeko Dark Plus Theme Direct Download](https://raw.githubusercontent.com/geany/geany-themes/master/colorschemes/geeko-dark-plus.conf)
+
 
 ### [The Github Theme](../colorschemes/github.conf)
 
