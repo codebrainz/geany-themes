@@ -44,6 +44,10 @@ configuration file paths.
 Documentation
 -------------
 
+Once you have installed the `colorschemes` directory,
+restart geany and select the any of the new color scehemes via the menu:
+**View -> Change Color Scheme...**.
+
 If you want to add a theme, read the [ADDING-A-THEME.md][add-theme] file. If you
 are a package maintainer, consult the [MAKING-A-RELEASE.md][make-release] file. For
 all other cases, consult the official Geany documentation.
